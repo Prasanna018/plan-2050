@@ -79,9 +79,15 @@ function Funding() {
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center  lg:text-xl">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center  lg:text-xl lg:justify-center lg:items-start lg:pl-2 ">
                 {links.map((link, index) => (
-                    <div key={index}>
+                    <div
+
+                        className='flex'
+
+
+
+                        key={index}>
                         <a
                             className={`cursor-pointer scroll-smooth rounded-xl p-2 bg-[#008CBA] text-white ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
                             onClick={() => handleSmoothScroll(link.id)}

@@ -93,7 +93,7 @@ function Summary() {
             className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit sm:bg-black"
         >
             {/* Left Section */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-[16px]">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-[16px] lg:items-start lg:pl-2">
                 {links.map((link, index) => (
                     <div
                         className='flex'

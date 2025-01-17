@@ -92,7 +92,7 @@ function Introduction() {
 
 
             {/* left side */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md lg:items-start lg:pl-2">
 
                 {links.map((link, index) => (
                     <div key={index}>

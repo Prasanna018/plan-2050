@@ -34,11 +34,11 @@ function Report() {
                             Capital Area Regional Planning Commission’s 2050 Regional Development Framework
                         </a>
                         , which serves as the region’s advisory land use guide. The Framework draws on public priorities, local government input, and growth projections to establish goals, objectives, and strategies for accommodating future growth in the Dane County region.
-                        The adopted plan can be downloaded here ,
+                        The adopted plan can be downloaded ,
 
-                        <a href='../../public/report_pdf.pdf' target='_blank' className='text-red-500 underline font-semibold'>
+                        <a href='../../public/report_pdf.pdf' target='_blank' className=' font-semibold underline'>
 
-                            doc1_full_report.
+                            here
                         </a>
 
                     </p>

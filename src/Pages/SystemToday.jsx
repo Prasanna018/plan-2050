@@ -136,9 +136,11 @@ function SystemToday() {
         >
             {/* left */}
 
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-xl">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-xl lg:items-start lg:pl-2">
                 {links.map((link, index) => (
-                    <div key={index}>
+                    <div
+
+                        key={index}>
                         <a
                             className={`cursor-pointer scroll-smooth text-white rounded-xl bg-[#008CBA] p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
                             onClick={() => handleSmoothScroll(link.id)}

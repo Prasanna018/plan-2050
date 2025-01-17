@@ -81,7 +81,7 @@ function OurSystemsTommarow() {
 
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-xl">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-6 text-center underline lg:text-xl lg:justify-center lg:items-start lg:pl-2">
 
                 {links.map((link, index) => (
                     <div

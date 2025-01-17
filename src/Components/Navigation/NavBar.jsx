@@ -107,7 +107,7 @@ function NavBar() {
                         <Link className='text-yellow-500 font-bold sm:text-2xl text-[16px] text-center flex italic'
                             to='/'
                         >
-                            CONNECT GREATER MADISON 2050
+                            PLAN 2050
 
 
                         </Link>

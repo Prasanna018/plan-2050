@@ -99,20 +99,23 @@ function TrendsAndForeCasts() {
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md lg:w-[40vw]">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md lg:w-[30vw] lg:pl-2 lg:items-start">
 
-                <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  lg:space-y-6 text-center underline lg:text-xl">
-                    {links.map((link, index) => (
-                        <div key={index}>
-                            <a
-                                className={`cursor-pointer scroll-smooth rounded-xl bg-[#008CBA] text-white p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
-                                onClick={() => handleSmoothScroll(link.id)}
-                            >
-                                {link.text}
-                            </a>
-                        </div>
-                    ))}
-                </div>
+
+                {links.map((link, index) => (
+                    <div
+                        className="flex"
+                        key={index}>
+
+                        <a
+                            className={`cursor-pointer scroll-smooth rounded-xl bg-[#008CBA] text-white p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
+                            onClick={() => handleSmoothScroll(link.id)}
+                        >
+                            {link.text}
+                        </a>
+                    </div>
+                ))}
+
 
             </div>
 
@@ -122,7 +125,7 @@ function TrendsAndForeCasts() {
             {/* right */}
 
 
-            <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full">
+            <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:w-[70vw]">
 
                 <div id="image-section" className="object-cover scroll-section">
                     <img src={trends_and_forecasts} alt="Summary Background" />
