@@ -12,6 +12,8 @@ import OurSystemsTommarow from './Pages/OurSystemsTommarow'
 import Funding from './Pages/Funding'
 
 function App() {
+
+  // hidding the overflow due to motion in initial time
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
     return () => document.body.classList.remove("overflow-hidden");

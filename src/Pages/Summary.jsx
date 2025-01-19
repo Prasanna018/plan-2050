@@ -121,7 +121,7 @@ function Summary() {
 
 
             {/* Right Section */}
-            <div className="w-full relative sm:w-full  sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
+            <div className="w-full relative sm:w-full lg:pt-10 pt-2 sm:h-fit  sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
                 <div className='lg:w-[35vw] w-full bg-black p-2 h-fit'>
 
 
