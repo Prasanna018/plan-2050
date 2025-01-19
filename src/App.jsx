@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from "motion/react"
 import NavBar from './Components/Navigation/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -12,8 +12,13 @@ import OurSystemsTommarow from './Pages/OurSystemsTommarow'
 import Funding from './Pages/Funding'
 
 function App() {
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+    return () => document.body.classList.remove("overflow-hidden");
+  }, []);
+
   return (
-    <div className='min-h-screen  bg-[#e7eaeb] text-white'>
+    <div className='min-h-screen  bg-[#e7eaeb] text-white overflow-hidden'>
 
       <NavBar></NavBar>
 
