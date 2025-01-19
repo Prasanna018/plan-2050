@@ -134,84 +134,83 @@ function Summary() {
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
 
 
-                        <motion.div
 
 
 
-                        >
-                            <p>
-                                The Madison region’s transportation system
-                                provides critical connections to commerce,
-                                employment, health care, education and
-                                recreation, and supports the quick and
-                                efcient movement of goods and services.
-                                A successfully integrated multi-modal
-                                transportation system provides multiple
-                                options for commuting, shopping, leisure,
-                                and regional travel. Transportation afects
-                                the afordability of neighborhoods and
-                                communities, as well as the viability of
-                                community and economic development.
-                                The transportation network also directly
-                                infuences quality of life in the region. Safe
-                                and efcient regional transportation facilities
-                                ensure convenient business and leisure travel,
-                                while an integrated, well-connected network
-                                makes traveling by all modes convenient and
-                                enjoyable. Streets can foster community by
-                                acting as community gathering and meeting
-                                spaces, and high quality transit and bicycling
-                                options are important for employers wanting
-                                to attract young, educated, skilled workers.
-                                The Connect Greater Madison 2050
-                                Regional Transportation Plan (RTP) sets the
-                                framework for the future of transportation
-                                in the Madison region, identifying how the
-                                region intends to invest in the transportation
-                                system to accommodate current travel
-                                demands and future growth, while setting
-                                priorities that balance limited funds. The
-                                plan includes strategies to begin addressing
-                                important trends such as rapidly evolving
-                                transportation technology and the rise of
-                                teleworking, as well as strategies to take
-                                action on critical issues, including equity and
-                                climate change. It articulates how the region
-                                intends to build, manage, and operate its
-                                multi-modal transportation system to meet
-                                important regional economic, transportation,development, and sustainability goals. Finally,
-                                the plan ties goals to performance measures
-                                and sets targets to track progress.
-                                The RTP is a federally required long-range
-                                (20+ years) transportation plan that guides
-                                federally funded transportation investments. It
-                                must be updated every fve years in order for
-                                the Madison metropolitan area to be eligible
-                                to receive federal funding for transportation
-                                projects. The Connect Greater Madison 2050
-                                plan update builds upon recent and ongoing
-                                MPO, WisDOT, and local government
-                                projects, plans, and studies, including an MPO
-                                trafc safety study, WisDOT’s Beltline fex lane
-                                and U.S. Highway 51 Highway projects, and
-                                Metro’s Bus Rapid Transit project and Transit
-                                Network Redesign study. Federal rules require
-                                the plan to be fnancially constrained.
-                                The plan complements and supports the
-                                Capital Area Regional Planning Commission’s
-                                (CARPC) Regional Development Framework
-                                (RDF), including the future growth scenario
-                                built using the RDF goals and strategies
-                                and local plans. Together with the RDF,
-                                Connect Greater Madison 2050 establishes
-                                a regional vision for the future, and roadmap
-                                to achieving regional transportation and
-                                land use goals through strategic, coordinated
-                                investments.
 
-                            </p>
+                        <p>
+                            The Madison region’s transportation system
+                            provides critical connections to commerce,
+                            employment, health care, education and
+                            recreation, and supports the quick and
+                            efcient movement of goods and services.
+                            A successfully integrated multi-modal
+                            transportation system provides multiple
+                            options for commuting, shopping, leisure,
+                            and regional travel. Transportation afects
+                            the afordability of neighborhoods and
+                            communities, as well as the viability of
+                            community and economic development.
+                            The transportation network also directly
+                            infuences quality of life in the region. Safe
+                            and efcient regional transportation facilities
+                            ensure convenient business and leisure travel,
+                            while an integrated, well-connected network
+                            makes traveling by all modes convenient and
+                            enjoyable. Streets can foster community by
+                            acting as community gathering and meeting
+                            spaces, and high quality transit and bicycling
+                            options are important for employers wanting
+                            to attract young, educated, skilled workers.
+                            The Connect Greater Madison 2050
+                            Regional Transportation Plan (RTP) sets the
+                            framework for the future of transportation
+                            in the Madison region, identifying how the
+                            region intends to invest in the transportation
+                            system to accommodate current travel
+                            demands and future growth, while setting
+                            priorities that balance limited funds. The
+                            plan includes strategies to begin addressing
+                            important trends such as rapidly evolving
+                            transportation technology and the rise of
+                            teleworking, as well as strategies to take
+                            action on critical issues, including equity and
+                            climate change. It articulates how the region
+                            intends to build, manage, and operate its
+                            multi-modal transportation system to meet
+                            important regional economic, transportation,development, and sustainability goals. Finally,
+                            the plan ties goals to performance measures
+                            and sets targets to track progress.
+                            The RTP is a federally required long-range
+                            (20+ years) transportation plan that guides
+                            federally funded transportation investments. It
+                            must be updated every fve years in order for
+                            the Madison metropolitan area to be eligible
+                            to receive federal funding for transportation
+                            projects. The Connect Greater Madison 2050
+                            plan update builds upon recent and ongoing
+                            MPO, WisDOT, and local government
+                            projects, plans, and studies, including an MPO
+                            trafc safety study, WisDOT’s Beltline fex lane
+                            and U.S. Highway 51 Highway projects, and
+                            Metro’s Bus Rapid Transit project and Transit
+                            Network Redesign study. Federal rules require
+                            the plan to be fnancially constrained.
+                            The plan complements and supports the
+                            Capital Area Regional Planning Commission’s
+                            (CARPC) Regional Development Framework
+                            (RDF), including the future growth scenario
+                            built using the RDF goals and strategies
+                            and local plans. Together with the RDF,
+                            Connect Greater Madison 2050 establishes
+                            a regional vision for the future, and roadmap
+                            to achieving regional transportation and
+                            land use goals through strategic, coordinated
+                            investments.
 
-                        </motion.div>
+                        </p>
+
+
 
                         <img className="object-cover w-full h-full pt-2" src={night_pic} alt="Night Overview" />
                     </div>
