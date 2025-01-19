@@ -75,11 +75,11 @@ function Funding() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit bg-[#e7eaeb] "
+            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2  scroll-smooth overflow-y-auto sm:h-fit bg-[#e7eaeb] "
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center   lg:justify-center lg:items-start lg:pl-2 ">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center   lg:justify-center lg:items-start lg:pl-2">
                 {links.map((link, index) => (
                     <div
 
@@ -185,10 +185,10 @@ function Funding() {
 
                             <img
                                 src={road_bikes}
-                                className='object-cover w-full p-4'
+                                className='object-cover w-full '
                             >
                             </img>
-                            <p className='p-2'>
+                            <p className='py-2'>
                                 funding programs, but also includes some
                                 new formula and discretionary grant
                                 programs that allow states, MPOs, and local
@@ -283,13 +283,13 @@ function Funding() {
                         <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center  w-full" id="2">
 
 
-                            <span className='text-orange-700 text-xl p-4 '>
+                            <span className='text-orange-700 text-xl py-2 '>
                                 COUNTY AND MUNICIPAL STREETS/
                                 ROADWAYS
                             </span>
 
 
-                            <p className='p-2'>
+                            <p className='py-2'>
                                 Municipal streets are mostly fnanced by
                                 local funding sources. These include general
                                 revenues (mostly from the property tax) and
@@ -535,7 +535,7 @@ function Funding() {
                                 crossing facilities. </p>
                         </div>
 
-                        <div className='w-full p-4'>
+                        <div className='w-full py-4'>
                             <img
                                 src={Figure_5_g_Estimated_Transportation_Expenses_2022_2050}
                                 className=' w-full object-cover'

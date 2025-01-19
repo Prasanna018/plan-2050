@@ -122,11 +122,11 @@ function Summary() {
 
             {/* Right Section */}
             <div className="w-full relative sm:w-full  sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
-                <div className='lg:w-[35vw] w-full bg-black p-4 h-fit'>
+                <div className='lg:w-[35vw] w-full bg-black p-2 h-fit'>
 
 
                     {/* Image Section */}
-                    <div id="image-section" className="object-cover  py-4 scroll-section">
+                    <div id="image-section" className="object-cover   scroll-section">
                         <img src={summary_bg} alt="Summary Background" />
                     </div>
 
@@ -216,7 +216,7 @@ function Summary() {
                     </div>
 
 
-                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 text-center" id="2">
+                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 " id="2">
                         <span className="lg:text-xl">MISSION</span>
                         <p>
                             Lead the collaborative planning and funding of a sustainable, equitable transportation
@@ -247,14 +247,14 @@ function Summary() {
                         <img className='w-full object-cover' src={Map_EX_a_Planning_Boundaries_of_the_Greater_Madison_MPO}></img>
                     </div>
 
-                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 text-center" id="3">
+                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 " id="3">
                         <img className='object-cover w-full' src={link3}></img>
 
 
 
                     </div>
 
-                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 text-center" id="4">
+                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 " id="4">
                         <div className='lg:flex flex flex-col justify-center items-center lg:justify-center  lg:flex-col'>
                             <p className='lg:text-[20px] '>
                                 Demographic changes, commuting patterns,
@@ -318,7 +318,7 @@ function Summary() {
                                     <span className='text-xl'>EMPLOYMENT AND THE ECONOMY </span>
                                 </div>
 
-                                <div className='text-center '>
+                                <div className=' '>
                                     <p>Dane County’s thriving and diverse economy  has led to one of the lowest unemployment rates in Wisconsin, and this trend is expected to continue in the coming years (see Figure EX-b). Employment in the City of Madison is  expected to grow by more than 80,000 by
 
                                         2050, with the remainder of Dane County’s
@@ -346,7 +346,7 @@ function Summary() {
 
                     </div>
 
-                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 text-center" id="5">
+                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 " id="5">
 
 
 
@@ -540,7 +540,7 @@ function Summary() {
                                 Key Recommendations
                             </span>
 
-                            <p className='text-center'>
+                            <p className=''>
                                 Adopt local land use plans that support
                                 RTP goals and policies.
                                 <br></br>
@@ -551,19 +551,19 @@ function Summary() {
                                 dependent neighborhoods.
                             </p>
                         </div>
-                        <div className='space-y-4'>
+                        <div className='space-y-4 w-full'>
                             <img className='w-full object-cover' src={key_recommendations}>
                             </img>
 
                         </div>
 
-                        <div className='space-y-6'>
+                        <div className='space-y-6 w-full'>
                             <img
                                 className='object-cover w-full'
                                 src={Map_EX_d_Major_Roadway_and_High_Capacity_Transit_Projects_and_Studies}></img>
                         </div>
 
-                        <div className='space-y-4'>
+                        <div className='space-y-4 w-full'>
                             <span className='lg:text-xl text-orange-700'>
                                 Roadways
                             </span>
@@ -620,9 +620,9 @@ function Summary() {
 
                         </div>
 
-                        <div >
+                        <div className='w-full' >
 
-                            <img className='object-cover' src={transport_bus}></img>
+                            <img className='object-cover w-full' src={transport_bus}></img>
                         </div>
 
 
@@ -636,7 +636,7 @@ function Summary() {
                     </div>
 
 
-                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 text-center" id="6">
+                    <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 " id="6">
 
                         <div className='space-y-6 '>
                             <img

@@ -107,7 +107,7 @@ function OurSystemsTommarow() {
 
 
 
-                    <div id="image-section" className="object-cover scroll-section">
+                    <div id="image-section" className="object-cover w-full scroll-section">
                         <img src={our_system_tomorrow_bg} alt="Summary Background" />
                     </div>
                     <div className='py-2'>
@@ -155,7 +155,7 @@ function OurSystemsTommarow() {
                         >
                             <div className='flex text-center justify-center'>
 
-                                <span className='p-2 text-white font-bold text-center text-xl'>
+                                <span className='py-2 text-white font-bold text-center text-xl'>
                                     Critical Issues
                                 </span>
                             </div>
@@ -201,7 +201,7 @@ function OurSystemsTommarow() {
 
 
 
-                        <div className='lg:flex-col flex flex-col gap-3'>
+                        <div className='lg:flex-col w-full flex flex-col gap-3'>
                             <img
                                 className='object-cover '
                                 src={peoples_on_road}></img>
@@ -332,7 +332,7 @@ function OurSystemsTommarow() {
                         </div>
 
                         <div className='py-2'>
-                            <span className='p-4'>
+                            <span className=''>
                                 Transportation is currently experiencing
                                 a rapid change not seen since the early
                                 20th century. Some of this change is due
@@ -365,7 +365,7 @@ function OurSystemsTommarow() {
                                 TELEWORK
 
                             </span>
-                            <p className='p-2'>
+                            <p className='py-2'>
                                 time employees in the US were working partly
                                 or fully remotely at the end of 2021, a seismic
                                 jump from 6% prior to the start of the Covid-19
@@ -429,7 +429,7 @@ function OurSystemsTommarow() {
                         <div className='py-4 w-full'>
                             <img
                                 src={Figure_4_a_Levels_of_Vehicle_Automation}
-                                className='w-full object-cover p-2'
+                                className='w-full object-cover py-2'
                             ></img>
                         </div>
 
@@ -437,7 +437,7 @@ function OurSystemsTommarow() {
                             <span className='text-orange-800 text-xl'>CONNECTED AND AUTONOMOUS
                                 VEHICLES </span>
 
-                            <p className='p-4'>
+                            <p className='py-4'>
                                 Connected and Autonomous vehicles (CV/AVs)
                                 are vehicles in which at least some aspect of
                                 safety-critical control functions occurs without
@@ -514,11 +514,11 @@ function OurSystemsTommarow() {
 
                         <div className='flex text-center justify-center'>
 
-                            <span className='p-2 text-white font-bold text-center text-xl'>
+                            <span className=' text-white font-bold text-center text-xl'>
                                 Needs and Recommendations
                             </span>
                         </div>
-                        <div>
+                        <div className='w-full'>
                             <p>
                                 The MPO has synthesized transportation
                                 system needs and developed a series
@@ -563,10 +563,10 @@ function OurSystemsTommarow() {
                             </p>
                             <img
                                 src={road}
-                                className='p-4 object-cover w-full'
+                                className='py-2 object-cover w-full'
                             >
                             </img>
-                            <p className=' p-4'>
+                            <p className=' py-2'>
                                 • Land use and Transportation Integration
                                 <br></br>
                                 • Roadways
@@ -594,8 +594,8 @@ function OurSystemsTommarow() {
                             </p>
                         </div>
 
-                        <div className='p-4 space-y-4'>
-                            <span className='p-2 text-orange-800 text-xl'>
+                        <div className='space-y-4'>
+                            <span className=' text-orange-800 text-xl'>
                                 Land Use and
                                 Transportation
                                 Integration
@@ -647,7 +647,7 @@ function OurSystemsTommarow() {
                             <img
 
                                 src={Figure_4_b_Land_Use_and_Transportation_Recommendations_and_Supporting_Actions}
-                                className='p-4 object-cover w-full'
+                                className='py-4 object-cover w-full'
                             ></img>
                         </div>
                     </div>
@@ -659,7 +659,7 @@ function OurSystemsTommarow() {
                                 Evaluating Plan Progress
                             </span>
                         </div>
-                        <div className=' text-center'>
+                        <div className=''>
                             <p className=''>
                                 The Infrastructure Investment and Jobs
                                 Act (IIJA) requires MPOs to develop

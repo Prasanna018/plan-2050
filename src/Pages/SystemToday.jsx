@@ -198,14 +198,14 @@ function SystemToday() {
 
                             <div>
 
-                                <span className='text-white font-bold text-center text-2xl p-4'>Roadways
+                                <span className='text-white font-bold text-center text-2xl py-4'>Roadways
 
 
                                 </span>
                             </div>
 
 
-                            <p className='p-4'>
+                            <p className='py-4'>
                                 Streets and highways form the
                                 foundation of the transportation
                                 system. Aside from limited-access
@@ -317,7 +317,7 @@ function SystemToday() {
                             </span>
 
 
-                            <p className='p-4'>
+                            <p className='py-2'>
                                 The Federal-Aid Highway Act of 1973, as
                                 amended, requires the use of a functional
                                 highway classifcation to update and modify
@@ -343,7 +343,7 @@ function SystemToday() {
                                 categories:
                             </p>
 
-                            <p className='p-2'>
+                            <p className='py-2'>
                                 • Principal Arterials, which include the
                                 Interstate, other access restricted freeways
                                 and expressways, and other high trafc
@@ -364,7 +364,7 @@ function SystemToday() {
                                 • Local Roads, which serve primarily an
                                 access function for homes and businesses.
                             </p>
-                            <p className='p-2'>
+                            <p className='py-2'>
                                 Federal legislation uses functional
                                 classifcation in determining eligibility for
                                 funding under the Federal-aid program. All
@@ -391,20 +391,20 @@ function SystemToday() {
 
 
                         <div className='py-2'>
-                            <span className='p-2 text-xl text-orange-800'>
+                            <span className='py-2 text-xl text-orange-800'>
                                 STREET TYPOLOGY
                             </span>
 
                             <div className='flex lg:flex-col flex-col items-center'>
 
-                                <p className='p-2'>
+                                <p className='py-2'>
 
                                     The functional classifcation system only
                                     addresses how roadways are being used
                                     by motor vehicle trafc.
                                 </p>
                                 <img
-                                    className='p-4'
+                                    className='py-4 w-full object-cover'
                                     src={man_with_cycle_road}
                                 >
                                 </img>
@@ -413,7 +413,7 @@ function SystemToday() {
 
                         <div className='py-2'>
                             <img
-                                className='p-2 object-cover w-full'
+                                className='py-2 object-cover w-full'
                                 src={Map_3_a_2020_Roadway_Functional_Classifcation_System_2020}></img>
                         </div>
 
@@ -444,7 +444,7 @@ function SystemToday() {
                             </p>
 
                             <img
-                                className='p-3'
+                                className='py-3 w-full object-cover'
                                 src={walking_on_road}
                             >
                             </img>
@@ -452,7 +452,7 @@ function SystemToday() {
 
                         <div className='space-y-4 py-2'>
 
-                            <span className='text-orange-600 text-xl p-2'>
+                            <span className='text-orange-600 text-xl py-2'>
                                 NATIONAL HIGHWAY SYSTEM
                             </span>
                             <p className='py-2'>
@@ -496,8 +496,8 @@ function SystemToday() {
                         <div className='space-y-4 '>
                             <span className='text-orange-800 p-2 text-xl'>ROADWAY JURISDICTION </span>
 
-                            <p className='p-6'>
-                                <p className='p-4'>Roadway jurisdiction indicates which
+                            <p className='py-4'>
+                                <p className=''>Roadway jurisdiction indicates which
                                     agency or community owns the road and is
                                     responsible for construction, maintenance,
                                     and operations. Roadway jurisdiction of
@@ -573,7 +573,7 @@ function SystemToday() {
 
                             <img
                                 src={Map_3_b_National_Highway_System_2020}
-                                className='p-4 object-cover w-full'
+                                className='py-4 object-cover w-full'
                             >
 
                             </img>
@@ -581,7 +581,7 @@ function SystemToday() {
                         </div>
 
                         <div className='space-y-4 '>
-                            <span className='text-orange-800 p-2 text-xl'>PAVEMENT CONDITION
+                            <span className='text-orange-800  text-xl'>PAVEMENT CONDITION
 
                             </span>
                             <p>
@@ -599,13 +599,13 @@ function SystemToday() {
 
                             </p>
                             <img
-                                className='p-4 w-full object-cover'
+                                className='py-2 w-full object-cover'
                                 src={Figure_3_a_PASER_Ratings_and_Corresponding_Treatments}
                             ></img>
 
                             <div className='flex lg:flex-col flex-col items-center'>
 
-                                <p className='p-3'>
+                                <p className='py-3'>
                                     Condition Index (PCI), and the federal
                                     measure, required under the federal surface
                                     transportation program.
@@ -635,14 +635,14 @@ function SystemToday() {
                                 </p>
                                 <img
                                     src={cars_on_road}
-                                    className='object-cover'
+                                    className='object-cover w-full'
                                 >
                                 </img>
 
 
                             </div>
                             <div className='flex w-full justify-center items-center flex-col'>
-                                <p className='p-2'>
+                                <p className='py-2'>
                                     along a scale of 0-100 in which 0 is the worst
                                     possible roadway condition and 100 is a new
                                     roadway. For simplicity, this scale has been
@@ -726,9 +726,14 @@ function SystemToday() {
                                 </p>
                             </div>
                             <div className='flex  flex-col justify-center items-center w-full'>
-                                <img
-                                    src={Map_3_c_Pavement_Condition_PCI_PASER}
-                                ></img>
+                                <div className='flex justify-center items-center w-full'>
+
+                                    <img
+                                        className='w-full object-cover'
+                                        src={Map_3_c_Pavement_Condition_PCI_PASER}
+                                    ></img>
+
+                                </div>
                                 <p>
                                     An analysis of pavement condition in the
                                     Madison area is also included in Chapter 5.
@@ -746,7 +751,7 @@ function SystemToday() {
                                 BRIDGE CONDITION
                             </span>
 
-                            <div className='p-2'>
+                            <div className='py-2'>
                                 <p>
                                     The Federal Highway Administration (FHWA)
                                     compiles the National Bridge Inventory (NBI),
@@ -819,7 +824,7 @@ function SystemToday() {
                             </span>
 
                             <div className='flex flex-col items-center justify-center'>
-                                <p className='p-2'>
+                                <p className='py-2'>
                                     Between 2010 and 2019, vehicle
                                     miles of travel (VMT) increased
                                     about 8.5% or an average of
@@ -849,18 +854,18 @@ function SystemToday() {
 
                                 </p>
                                 <img
-                                    className='p-6 w-full object-cover'
+                                    className='py-2 w-full object-cover'
                                     src={Figure_3_b_Bridge_Condition}
                                 ></img>
 
                                 <img
-                                    className='p-6 object-cover w-full'
+                                    className='py-2 object-cover w-full'
                                     src={Map_3_d_Bridge_Condition}
                                 >
                                 </img>
 
                                 <img
-                                    className='p-6 w-full object-cover'
+                                    className='py-2 w-full object-cover'
                                     src={Map_3_f_2019_Roadway_Congestion}
                                 >
                                 </img>
@@ -873,17 +878,17 @@ function SystemToday() {
 
 
                     <div className="py-2 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="2">
-                        <div className='space-y-6 p-4'>
-                            <span className='p-2 text-white text-2xl '>
+                        <div className='space-y-6 py-2'>
+                            <span className=' text-white text-2xl '>
                                 Public Transit
                             </span>
 
 
                         </div>
 
-                        <div className='p-4 text-orange-700 text-xl'>
+                        <div className='py-2 text-orange-700 text-xl'>
 
-                            <span className='p-4'>
+                            <span className='py-2'>
                                 TRANSIT SERVICE PROVIDERS
                             </span>
                             <p>
@@ -898,7 +903,7 @@ function SystemToday() {
                                 a feet of about 215 fxed-route buses, as
                                 well as contractor-provided point-to-point
                             </p>
-                            <img className='p-4 object-cover w-full'
+                            <img className='py-2 object-cover w-full'
                                 src={Map_3_m_EV_Charging_Stations}
                             >
                             </img>
@@ -953,11 +958,11 @@ function SystemToday() {
                         <div>
                             <img src={Figure_3_h_Annual_Fixed_Route_Ridership_1970_2020}
 
-                                className='w-full object-cover p-4'
+                                className='w-full object-cover py-2'
                             >
                             </img>
 
-                            <p className='p-4 '>
+                            <p className='py-2 '>
                                 Map 3-n shows the transit route system and
                                 service area.
                                 While other communities lack local fxed route
@@ -975,16 +980,16 @@ function SystemToday() {
                         <div>
                             <img
 
-                                className='p-4 w-full object-cover'
+                                className='py-2 w-full object-cover'
                                 src={Map_3_o_Draft_Network_Plan}
                             ></img>
                         </div>
 
-                        <div className='p-2 space-y-5'>
-                            <span className='p-4 text-orange-700 text-xl'>
+                        <div className='py-2 space-y-5'>
+                            <span className=' text-orange-700 text-xl'>
                                 BUS OPERATIONS
                             </span>
-                            <p className='p-4'>
+                            <p className='py-2'>
                                 Metro Transit dispatches its feet of about
                                 220 buses from a single bus storage and
                                 operations facility on East Washington Avenue
@@ -1026,11 +1031,11 @@ function SystemToday() {
                             </p>
                         </div>
 
-                        <div className='p-2 space-y-5'>
-                            <span className='p-4 text-orange-700 text-xl'>
+                        <div className='py2 space-y-5'>
+                            <span className=' text-orange-700 text-xl'>
                                 FUNDING
                             </span>
-                            <p className='p-4'>
+                            <p className='py-4'>
                                 Funding for public transportation in the
                                 Madison area is derived primarily from four
                                 sources – fares, local investments (primarily
@@ -1054,9 +1059,9 @@ function SystemToday() {
                             </p>
                         </div>
 
-                        <div className='p-4 space-y-4'>
+                        <div className='py-2 space-y-4'>
                             <img
-                                className='p-2 objetc-cover w-full'
+                                className='py-2 objetc-cover w-full'
 
                                 src={Map_3_p_2019_Dane_County_Senior_Focal_Points}
                             ></img>
@@ -1075,7 +1080,7 @@ function SystemToday() {
                         <div >
                             <div className='flex justify-center items-center'>
 
-                                <span className='text-white text-2xl p-2 text-center font-bold'>Bicycles</span>
+                                <span className='text-white text-2xl py-2 text-center font-bold'>Bicycles</span>
 
                             </div>
                             <p className=''>
@@ -1189,7 +1194,7 @@ function SystemToday() {
 
                             <div className='flex justify-center items-center'>
 
-                                <span className='p-2 text-2xl text-white font-bold'>
+                                <span className='py-2 text-2xl text-white font-bold'>
                                     EXISTING PEDESTRIAN SYSTEM
 
                                 </span>
@@ -1335,7 +1340,7 @@ function SystemToday() {
                         </div>
 
                         <div className='space-y-4 py-2'>
-                            <span className='text-orange-700 p-4 text-xl'>
+                            <span className='text-orange-700  text-xl'>
                                 BICYCLE AND PEDESTRIAN CRASH STUDY
                             </span>
                             <p>

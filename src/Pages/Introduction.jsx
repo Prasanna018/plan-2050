@@ -117,7 +117,7 @@ function Introduction() {
             {/* right side */}
             <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center  ">
 
-                <div className='lg:w-[35vw] w-full bg-black h-fit p-4'>
+                <div className='lg:w-[35vw] w-full bg-black h-fit p-2'>
 
 
 
@@ -127,7 +127,7 @@ function Introduction() {
 
 
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
-                        <div className='space-y-4 flex justify-center items-center flex-col'>
+                        <div className='space-y-4 flex justify-center py-2 items-center flex-col'>
                             <span className='text-xl text-orange-800'>THE MADISON REGION
                                 IS GROWING
                             </span>
