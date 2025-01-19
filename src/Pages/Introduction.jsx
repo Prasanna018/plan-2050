@@ -82,6 +82,7 @@ function Introduction() {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -93,7 +94,7 @@ function Introduction() {
 
             {/* left side */}
             <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-4 text-center  lg:text-md lg:items-start lg:pl-2">
-                <div className='bg-white flex flex-col justify-start items-start space-y-4 p-2 rounded-lg'>
+                <div className=' flex flex-col justify-start items-start space-y-4 p-2 rounded-lg'>
 
 
 
@@ -113,7 +114,7 @@ function Introduction() {
             {/* right side */}
             <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center  ">
 
-                <div className='lg:w-[35vw] w-full bg-black h-fit'>
+                <div className='lg:w-[35vw] w-full bg-black h-fit p-4'>
 
 
 
@@ -573,14 +574,17 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                         </div>
 
-                        <div className='flex items-center justify-between '>
-                            <div className='w-1/2'>
+                        <div className='flex flex-col  items-center justify-center '>
+                            <div className='w-full py-2'>
                                 <p>A listing of the current Policy Board
-                                    members, meeting calendar, and past meeting minutes can be accessed at <a
-                                        className='text-blue-400 underline'
-                                        href='https://www.greatermadisonmpo.org/meetings/tpb.cfm. ' target='_blank'>https://www.greatermadisonmpo.org/meetings/tpb.cfm. </a></p>
+                                    members, meeting calendar, and past meeting minutes can be accessed at
+                                </p>
+                                <a
+                                    className='text-blue-400 underline cursor-pointer'
+                                    href='https://www.greatermadisonmpo.org/meetings/tpb.cfm ' target='_blank'>https://www.greatermadisonmpo.org/meetings/tpb.cfm. </a>
 
                             </div>
+
                             <div>
                                 <img src={mpo_policy_board_struture}></img>
                             </div>
@@ -729,6 +733,8 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 • Travel & Tourism: Enhance travel and tourism.
                             </p>
                         </div>
+
+
                     </div>
 
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
@@ -1061,23 +1067,12 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
 
-                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 pt-2"
                         id="11">
-                        <div>
-                            <p>
-                                Transportation planning is a continuous
-                                process. The Regional Transportation Plan 2050
-                                (RTP) builds upon a number of prior and
-                                current planning eforts, studies, reports, and
-                                already programmed transportation projects.
-                                Where applicable, recommendations and
-                                policies are incorporated from current plans
-                                including (but not limited to):
-                            </p>
-                        </div>
 
-                        <div className=' text-orange-700 font-bold'>
-                            <span className='text-2xl'>MPO PLANS </span>
+
+                        <div className='text-start text-orange-700 font-bold'>
+                            <span className='text-2xl '>MPO PLANS </span>
                         </div>
 
                         <div>
@@ -1153,24 +1148,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </p>
                         </div>
 
-                        <div>
-                            <span className='text-white font-semibold text-xl '>The MPO Performance Measures Report
-                                (2019) </span>
-                            <p className=''>
-                                The Performance Measures Report (PMR)
-                                analyzes progress towards meeting regional
-                                transportation goals by assigning measures
-                                to RTP goals. The report, which is released
-                                annually, is used along with the TIP and RTP
-                                in the new performance-based planning
-                                process. The annual performance measures
-                                report was temporarily paused in 2020 due
-                                to the disruption of the COVID-19 pandemic;
-                                monitoring will resume in 2022 and be moved
-                                to an online platform
 
-                            </p>
-                        </div>
 
                         <div>
                             <span className='text-white font-semibold text-xl '>2013-2017 Transit Development Plan (2013)

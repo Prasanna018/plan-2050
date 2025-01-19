@@ -100,6 +100,7 @@ function OurSystemsTommarow() {
 
             {/* right */}
             <div className="w-full relative  sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full ">
+
                 <div id="image-section" className="object-cover scroll-section">
                     <img src={our_system_tomorrow_bg} alt="Summary Background" />
                 </div>

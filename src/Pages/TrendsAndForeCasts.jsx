@@ -95,26 +95,28 @@ function TrendsAndForeCasts() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit sm:bg-black"
+            className="lg:h-[80vh] h-[90vh] flex w-full bg-[#e7eaeb] sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit "
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md lg:w-[50vw] lg:pl-2 lg:items-start ">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-4 text-center  lg:text-md lg:w-[50vw] lg:pl-2 lg:items-start ">
 
+                <div className=" flex flex-col space-y-4 p-2 rounded-lg">
 
-                {links.map((link, index) => (
-                    <div
-                        className="flex"
-                        key={index}>
+                    {links.map((link, index) => (
+                        <div
+                            className="flex"
+                            key={index}>
 
-                        <a
-                            className={`cursor-pointer scroll-smooth rounded-xl bg-[#008CBA] text-white p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
-                            onClick={() => handleSmoothScroll(link.id)}
-                        >
-                            {link.text}
-                        </a>
-                    </div>
-                ))}
+                            <a
+                                className={`cursor-pointer scroll-smooth rounded-xl bg-[#008CBA] text-white p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
+                                onClick={() => handleSmoothScroll(link.id)}
+                            >
+                                {link.text}
+                            </a>
+                        </div>
+                    ))}
+                </div>
 
 
             </div>
@@ -127,7 +129,7 @@ function TrendsAndForeCasts() {
 
             <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:w-full lg:flex lg:justify-center">
 
-                <div className="lg:w-[35vw] w-full">
+                <div className="lg:w-[35vw] w-full bg-black p-2 h-fit">
 
 
                     <div id="image-section" className="object-cover scroll-section">

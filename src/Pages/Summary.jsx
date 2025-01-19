@@ -16,7 +16,6 @@ import link5 from '../assets/Summary_photos/link5.png'
 
 import Map_EX_d_Major_Roadway_and_High_Capacity_Transit_Projects_and_Studies from '../assets/Summary_photos/Map EX-d Major Roadway and High Capacity Transit Projects and Studies .png'
 
-
 import transport_bus from '../assets/Summary_photos/transport bus.png'
 
 import Map_EX_e_Future_Planned_Regional_Transit_Service_Network from '../assets/Summary_photos/Map EX-e Future Planned Regional Transit Service Network .png'
@@ -38,6 +37,7 @@ const links = [
 
 
 
+
 function Summary() {
     const [activeSection, setActiveSection] = useState('');
 
@@ -51,6 +51,8 @@ function Summary() {
         }
     };
 
+
+    // useeffect for the scrolling watching 
     useEffect(() => {
         const observerOptions = {
             root: null, // Use the viewport as the root
@@ -98,7 +100,7 @@ function Summary() {
             {/* Left Section */}
             <div className="hidden md:w-[50vw] lg:w-[50vw] lg:flex lg:flex-col space-y-8 lg:justify-center p-2
             ">
-                <div className='bg-white flex flex-col space-y-6 h-fit px-2 py-6 rounded-lg'>
+                <div className=' flex flex-col space-y-6 h-fit px-2 py-6 rounded-lg'>
 
 
                     {links.map((link, index) => (
@@ -117,18 +119,20 @@ function Summary() {
                 </div>
             </div>
 
+
             {/* Right Section */}
             <div className="w-full relative sm:w-full  sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
-                <div className='lg:w-[35vw] w-full bg-black p-2 h-fit'>
+                <div className='lg:w-[35vw] w-full bg-black p-4 h-fit'>
 
 
                     {/* Image Section */}
-                    <div id="image-section" className="object-cover scroll-section">
+                    <div id="image-section" className="object-cover  py-4 scroll-section">
                         <img src={summary_bg} alt="Summary Background" />
                     </div>
 
                     {/* Sections */}
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
+
 
                         <motion.div
 
@@ -212,6 +216,7 @@ function Summary() {
                         <img className="object-cover w-full h-full pt-2" src={night_pic} alt="Night Overview" />
                     </div>
 
+
                     <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 text-center" id="2">
                         <span className="lg:text-xl">MISSION</span>
                         <p>
@@ -240,7 +245,7 @@ function Summary() {
                             development, and environmental goals.
 
                         </p>
-                        <img className='w-full  object-contain ' src={Map_EX_a_Planning_Boundaries_of_the_Greater_Madison_MPO}></img>
+                        <img className='w-full object-cover' src={Map_EX_a_Planning_Boundaries_of_the_Greater_Madison_MPO}></img>
                     </div>
 
                     <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 text-center" id="3">
@@ -630,6 +635,7 @@ function Summary() {
 
 
                     </div>
+
 
                     <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-6 text-center" id="6">
 
