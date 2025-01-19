@@ -240,7 +240,7 @@ function Summary() {
                             development, and environmental goals.
 
                         </p>
-                        <img className='w-full  lg:h-[800px] object-contain ' src={Map_EX_a_Planning_Boundaries_of_the_Greater_Madison_MPO}></img>
+                        <img className='w-full  object-contain ' src={Map_EX_a_Planning_Boundaries_of_the_Greater_Madison_MPO}></img>
                     </div>
 
                     <div className="flex flex-col justify-center w-full items-center  scroll-section space-y-4 text-center" id="3">

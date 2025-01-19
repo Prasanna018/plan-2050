@@ -87,30 +87,33 @@ function Introduction() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit sm:bg-black overflow-x-hidden"
+            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit overflow-x-hidden bg-[#e7eaeb]"
         >
 
 
             {/* left side */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex bg-black text-blue-500 lg:space-y-4 text-center  lg:text-md lg:items-start lg:pl-2">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-4 text-center  lg:text-md lg:items-start lg:pl-2">
+                <div className='bg-white flex flex-col justify-start items-start space-y-4 p-2 rounded-lg'>
 
-                {links.map((link, index) => (
-                    <div key={index}>
-                        <a
-                            className={`cursor-pointer scroll-smooth p-1 rounded-xl bg-[#008CBA] text-white ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
-                            onClick={() => handleSmoothScroll(link.id)}
-                        >
-                            {link.text}
-                        </a>
-                    </div>
-                ))}
 
+
+                    {links.map((link, index) => (
+                        <div key={index}>
+                            <a
+                                className={`cursor-pointer scroll-smooth p-1 rounded-xl bg-[#008CBA] text-white ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
+                                onClick={() => handleSmoothScroll(link.id)}
+                            >
+                                {link.text}
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {/* right side */}
-            <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center ">
+            <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center  ">
 
-                <div className='lg:w-[35vw] w-full'>
+                <div className='lg:w-[35vw] w-full bg-black h-fit'>
 
 
 
@@ -119,12 +122,12 @@ function Introduction() {
                     </div>
 
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
                         <div className='space-y-4 flex justify-center items-center flex-col'>
                             <span className='text-xl text-orange-800'>THE MADISON REGION
                                 IS GROWING
                             </span>
-                            <p className='p-2'>
+                            <p className=''>
                                 The Greater Madison Area is growing. From
                                 2000-2020 the Dane County population
                                 grew by 32% - adding almost 135,000 people.
@@ -138,7 +141,7 @@ function Introduction() {
                                 work, or play here.
                             </p>
                         </div>
-                        <div className='space-y-4 p-4'>
+                        <div className='space-y-4 pt-2'>
                             <img src={Road_vehilcles_city}></img>
                         </div>
 
@@ -146,7 +149,7 @@ function Introduction() {
                             <span className='text-xl text-orange-800'>THE TRANSPORTATION SYSTEM IS THE
                                 REGION’S BACKBONE </span>
 
-                            <p className='p-2'>
+                            <p className=''>
                                 The region’s transportation system
                                 provides critical connections to commerce,
                                 employment, health care, education, and
@@ -203,7 +206,7 @@ function Introduction() {
                                 THE TRANSPORTATION
                                 SYSTEM IS EVOLVING
                             </span>
-                            <p className='p-2'>
+                            <p className=''>
                                 The purpose of the Connect Greater Madison
                                 Regional Transportation Plan (RTP) for 2050
                                 is to identify how the region intends to invest
@@ -223,12 +226,12 @@ function Introduction() {
 
                     </div>
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="2">
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="2">
                         <div className='flex flex-col justify-center items-center'>
 
 
 
-                            <p className='p-3'>
+                            <p className=''>
                                 The RTP sets the framework for the future
                                 of transportation in the Madison region.
                                 The RTP is an integrated, multi-modal plan
@@ -285,13 +288,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </span>
                         </div>
                         <div>  <img
-                            className='object-cover p-2'
+                            className='object-cover '
                             src={green_city_road}></img></div>
 
                     </div>
 
                     <div
-                        className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                        className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="3">
                         <div className="flex justify-center items-center flex-col w-full
                     space-y-4
@@ -300,8 +303,8 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             <div>How to Navigate the Plan</div>
 
                             {/* Add overflow-x-auto to make this scrollable horizontally */}
-                            <div className="grid grid-cols-2 gap-6 w-full">
-                                <div className="flex flex-col justify-between items-center text-center py-4 px-6 lg:h-[250px] w-full border space-y-4">
+                            <div className="grid grid-cols-2 gap-6 w-full p-2">
+                                <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 1: Introduction</span>
                                     <hr className="border-2 w-full"></hr>
                                     <p className=''>Provides background, plan goals, planning requirements</p>
@@ -324,7 +327,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                         existing transportation system </p>
                                 </div>
 
-                                <div className="flex flex-col justify-between items-center text-center py-4 px-6 lg:h-[250px] w-full border space-y-4">
+                                <div className="flex flex-col justify-between items-center text-center py-4 lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 4: Our
                                         Transportation System
                                         Tomorrow </span>
@@ -337,7 +340,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                             </div>
-                            <div className="flex flex-col w-1/2 justify-between items-center text-center py-4 px-6 lg:h-[250px] border space-y-4">
+                            <div className="flex flex-col w-1/2 justify-between items-center text-center py-4  lg:h-[250px] border space-y-4">
                                 <span className="lg:text-xl">Chapter 4: Our
                                     Chapter 5: Financial Analysis  </span>
                                 <hr className="border-2 w-full"></hr>
@@ -351,7 +354,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                     <div
                         id="4"
-                        className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center pt-4"
+                        className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center pt-4"
                     >
                         <div className='text-center'>
                             <p>
@@ -370,7 +373,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 GOAL 1: LIVABLE COMMUNITIES
 
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Create connected livable places
+                            <p className='lg:px-8 py-4 '>Create connected livable places
                                 linked to jobs, services, education,
                                 retail, and recreation through a
                                 multimodal transportation system that
@@ -384,7 +387,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 GOAL 2: SAFETY
 
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Ensure that the transportation
+                            <p className=' py-4 '>Ensure that the transportation
                                 system enables all people to get to
                                 where they need to go safely with
                                 an emphasis on enhanced protection for
@@ -414,7 +417,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 4: EQUITY
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Provide convenient, afordable
+                            <p className=' py-4 '>Provide convenient, afordable
                                 transportation options that enable
                                 all people, regardless of age,
                                 ability, race, ethnicity, or income, to access
@@ -435,7 +438,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 GOAL 5: ENVIRONMENTAL
                                 SUSTAINABILITY
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Minimize transportation-related
+                            <p className='py-4 '>Minimize transportation-related
                                 greenhouse gas emissions that
                                 contribute to global climate change; avoid,
                                 minimize, and mitigate the environmental
@@ -452,7 +455,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 GOAL 6: SYSTEM PERFORMANCE
 
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Maximize the investment made
+                            <p className='py-4 '>Maximize the investment made
                                 in the existing transportation
                                 system by maintaining it in a state
                                 of good repair and harnessing technological
@@ -470,10 +473,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                     <div
-                        className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                        className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="5">
                         <div>
-                            <p className='p-4'>
+                            <p className=''>
                                 The Greater Madison MPO is the designated metropolitan planning organization (MPO) responsible for overseeing the continuous,
                                 comprehensive, and cooperative (3-C) transportation planning decision-making process for the Madison Metropolitan Planning Area
                                 (Map 1-a). MPOs are federally designated decision-making bodies for metropolitan areas with populations greater than 50,000, which guide
@@ -492,15 +495,15 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </p>
                         </div>
                         <div>
-                            <img className='w-screen p-4 object-cover'
+                            <img className='w-screen  object-cover'
                                 src={Map_1_a_Planning_Boundaries_of_the_Greater_Madison_MPO}>
                             </img>
                         </div>
 
 
-                        <div className='p-6'>
+                        <div className=''>
                             <span className='text-lg text-orange-600'>What the MPO does: </span>
-                            <p className='pl-6 pt-4'>
+                            <p className=' pt-4'>
                                 • Prepare a long range (20+ year) regional transportation plan for all
                                 modes of travel, which is updated every 5 years
                                 <br></br>
@@ -525,9 +528,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </p>
                         </div>
 
-                        <div className='p-6'>
+                        <div className=''>
                             <span className='text-lg text-orange-600'>What the MPO does not do:  </span>
-                            <p className='pl-6 pt-4'>
+                            <p className=' pt-4'>
                                 • Design, construct or maintain roadways or
                                 multi-use paths
                                 <br></br>
@@ -547,11 +550,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                     <div
-                        className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                        className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="6">
                         <div>
                             <span className='text-xl underline font-bold p-4'>MPO POLICY BOARD</span>
-                            <p className='p-2'>The MPO is governed by a 14-member Policy Board appointed by the local units
+                            <p className=''>The MPO is governed by a 14-member Policy Board appointed by the local units
                                 of government within the Metropolitan Planning Area, Dane County, and Wisconsin
                                 Department of Transportation (Figure 1-1). The Policy Board is the decision-making body for
                                 the organization. Federal law requires that the Policy Board shall consist of: </p>
@@ -570,7 +573,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                         </div>
 
-                        <div className='flex items-center justify-between p-8'>
+                        <div className='flex items-center justify-between '>
                             <div className='w-1/2'>
                                 <p>A listing of the current Policy Board
                                     members, meeting calendar, and past meeting minutes can be accessed at <a
@@ -585,7 +588,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                         <div>
                             <span className='text-xl underline font-bold p-4'>TECHNICAL COORDINATING COMMITTEE </span>
-                            <p className='p-2'>The Technical Coordinating Committee (TCC) is a multi-modal planning advisory and
+                            <p className='p-2'>The Technical Coordinating Committee (TCC) is a multi-model planning advisory and
                                 coordinating committee. It includes members representing various agencies or facets of
                                 transportation planning and consists of 14 voting members, 6 alternate voting members,
                                 and 2 non-voting members representing the U.S. Department of Transportation. While
@@ -613,11 +616,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                     </div>
 
                     <div
-                        className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                        className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="7">
 
                         <div>
-                            <p className='p-4'>The metropolitan transportation planning
+                            <p className=''>The metropolitan transportation planning
 
                                 process is directed by the most recent federal
                                 transportation authorization legislation,
@@ -631,7 +634,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 planning.</p>
 
                             <div>
-                                <span className='text-orange-600 p-4'>REGIONAL TRANSPORTATION PLAN
+                                <span className='text-orange-600 '>REGIONAL TRANSPORTATION PLAN
                                     REQUIREMENTS </span>
 
                                 <p>The MPO is required to develop a regional
@@ -641,7 +644,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                     be updated every 5 years. The plan shall
                                     include both long-range and short-range strategies and actions that provide for the development of an integrated multimodal
                                     transportation system. The plan must include:</p>
-                                <p className='p-3'>
+                                <p className=''>
                                     • Analysis of the current and future transportation demand of persons and goods in the
                                     region
                                     <br></br>
@@ -678,15 +681,15 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                     </div>
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="8">
                         <div>
-                            <span className='text-2xl text-fuchsia-600 p-4'>
+                            <span className='text-2xl text-fuchsia-600 '>
                                 National Transportation
                                 Planning Factors
                             </span>
 
-                            <p className='px-8 py-4 '>
+                            <p className=' py-4 '>
                                 • Economic Vitality: Support the economic
                                 vitality of the metropolitan area, especially by
                                 enabling global competitiveness, productivity,
@@ -698,8 +701,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 • Security: Increase the security of the
                                 transportation system for motorized and
                                 non motorized users.
-                                <br></br>
-                                • Accessibility & Mobility: Increase the
+                                <br></br>                            • Accessibility & Mobility: Increase the
                                 accessibility and mobility of people and freight.
                                 <br></br>
                                 • Environment & Quality of Life: Protect and
@@ -729,11 +731,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
                     </div>
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="9">
 
                         <div>
-                            <p className='p-4 text-center'>
+                            <p className=' text-center'>
                                 The Connect Greater Madison 2050 Regional
                                 Transportation Plan was developed over
                                 a two-year time period beginning in late
@@ -755,13 +757,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div className='pt-5'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 PHASE 1: EXISTING CONDITIONS ANALYSIS,
                                 GROWTH FORECASTS, AND GOAL
                                 DEVELOPMENT
                             </span>
 
-                            <p className='p-4 '>In late 2020 MPO staf began to collect
+                            <p className=' '>In late 2020 MPO staf began to collect
                                 data and analyze existing conditions.
                                 Data trends related to demographics, the
                                 economy, land use development, travel,and transportation system performance
@@ -799,14 +801,14 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div className='pt-5'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 PHASE 2: DEVELOPMENT AND
                                 PRIORITIZATION OF IMPROVEMENT
                                 PROJECTS AND STRATEGIES
 
                             </span>
 
-                            <p className='p-4 '>Beginning in late summer of 2021, MPO
+                            <p className=' '>Beginning in late summer of 2021, MPO
                                 staf analyzed the existing conditions in
                                 combination with trafc forecasts to conduct
                                 gap and need analyses. These analyses were
@@ -833,13 +835,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div className='pt-5'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 PHASE 3: FINANCIAL CAPACITY ANALYSIS
                                 AND DRAFT PLAN
 
                             </span>
 
-                            <p className='p-4 '>In early 2022 staf completed a fnancial
+                            <p className=' '>In early 2022 staf completed a fnancial
                                 capacity analysis. This analysis determined
                                 which projects and strategies from the
                                 prioritized list would be included in the plan
@@ -874,12 +876,12 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div className='pt-5'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 PHASE 4: PLAN IMPLEMENTATION
 
                             </span>
 
-                            <p className='p-4 '>
+                            <p className=' '>
                                 The MPO adoption of the RTP demonstrates
                                 regional agreement on the transportation
                                 vision for the metropolitan area. Upon
@@ -901,13 +903,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div className='pt-5 flex flex-col justify-center items-center'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 A COORDINATED APPROACH TO
                                 TRANSPORTATION AND LAND USE
                                 PLANNING
                             </span>
 
-                            <p className='p-4 '>
+                            <p className=''>
                                 One of the greater Madison region’s key
                                 challenges is growth. With Dane County’s
                                 population projected to grow by 178,000
@@ -951,13 +953,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div className='pt-5 flex flex-col justify-center items-center'>
-                            <span className='text-xl text-center text-fuchsia-800 font-semibold p-4'>
+                            <span className='text-xl text-center text-fuchsia-800 font-semibold '>
                                 THE COVID-19 GLOBAL PANDEMIC AND
                                 ITS POTENTIAL LONG-TERM IMPACT ON
                                 TRAVEL TRENDS
                             </span>
 
-                            <p className='p-4 '>
+                            <p className=' '>
                                 The outbreak of the COVID-19 global
                                 pandemic began just prior to the ofcial start
                                 of the RTP planning process. The pandemic
@@ -1020,7 +1022,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                     </div>
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="10">
 
                         <div className='flex flex-col '>
@@ -1029,7 +1031,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 Measures
 
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The federal performance measures
                                 established in 23 CFR 490 and 49 CFR
                                 625 and 630 include:
@@ -1050,7 +1052,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 Safety Plan (PTASP)
                             </p>
                         </div>
-                        <div className='p-4 w-full flex justify-center items-center'>
+                        <div className=' w-full flex justify-center items-center'>
                             <img src={Figure_1_b_Performance_Based_Planning_and_Programming_Framework}></img>
                         </div>
 
@@ -1059,7 +1061,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="11">
                         <div>
                             <p>
@@ -1074,13 +1076,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </p>
                         </div>
 
-                        <div className='p-4 text-orange-700 font-bold'>
+                        <div className=' text-orange-700 font-bold'>
                             <span className='text-2xl'>MPO PLANS </span>
                         </div>
 
                         <div>
                             <span className='text-white font-semibold text-xl p-4'>2050 Regional Transportation Plan (2017)</span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The MPO’s previous RTP. The 2050 Regional
                                 Transportation Plan was a major update to
                                 the 2035 RTP update, extending the planning
@@ -1103,8 +1105,8 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Bicycle Transportation Plan (2015)</span>
-                            <p className='p-3'>
+                            <span className='text-white font-semibold text-xl '>Bicycle Transportation Plan (2015)</span>
+                            <p className=''>
                                 The Bicycle Transportation Plan for the
                                 Madison Metropolitan Area and Dane County is a comprehensive bicycle plan to
                                 serve as a blueprint for continuing to improve
@@ -1126,9 +1128,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>2022-2026 Transportation Improvement
+                            <span className='text-white font-semibold text-xl '>2022-2026 Transportation Improvement
                                 Program (2021) </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The Transportation Improvement Program
                                 (TIP), which the MPO updates annually,
                                 is a coordinated listing of short-range
@@ -1152,9 +1154,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>The MPO Performance Measures Report
+                            <span className='text-white font-semibold text-xl '>The MPO Performance Measures Report
                                 (2019) </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The Performance Measures Report (PMR)
                                 analyzes progress towards meeting regional
                                 transportation goals by assigning measures
@@ -1171,9 +1173,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>2013-2017 Transit Development Plan (2013)
+                            <span className='text-white font-semibold text-xl '>2013-2017 Transit Development Plan (2013)
                                 (2019) </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The Transit Development Plan (TDP) for the
                                 Madison Urban Area is a short- to mediumrange strategic plan intended to identify
                                 transit needs and proposed improvements
@@ -1193,9 +1195,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Congestion Management Process (2022)
+                            <span className='text-white font-semibold text-xl '>Congestion Management Process (2022)
                                 (2019) </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 Metropolitan Planning Organizations with
                                 planning area populations over 200,000 are
                                 designated as Transportation Management
@@ -1206,7 +1208,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 planning process. The CMP is an 8-step
                                 process, as follows:
 
-                                <p className='p-4'>
+                                <p className=''>
 
                                     • Develop Congestion Management
                                     Objectives;
@@ -1248,11 +1250,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Wisconsin Rail Plan 2050 (Anticipated Early
+                            <span className='text-white font-semibold text-xl '>Wisconsin Rail Plan 2050 (Anticipated Early
                                 2022)
 
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The Wisconsin State Rail Plan 2050 will
                                 include policies for railroad crossings, freight
                                 rail, Wisconsin’s state-owned rail system,
@@ -1266,11 +1268,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Transportation Asset Management Plan
+                            <span className='text-white font-semibold text-xl '>Transportation Asset Management Plan
                                 (2019)
 
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The TAMP outlines WisDOT’s investment
                                 strategy over the next ten years (to 2029)
                                 to keep the National Highway System safe,
@@ -1279,10 +1281,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>WisDOT SW Region Park-and-Ride System
+                            <span className='text-white font-semibold text-xl '>WisDOT SW Region Park-and-Ride System
                                 Study (2015)
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The Wisconsin Department of Transportation
                                 (WisDOT) Southwest Region initiated the
                                 Southwest Region Park-and-Ride System
@@ -1302,10 +1304,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Major Corridor Studies
+                            <span className='text-white font-semibold text-xl '>Major Corridor Studies
 
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 Major highway development projects
                                 are generally the most complex and
                                 costly projects initiated by the Wisconsin
@@ -1369,13 +1371,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
 
-                        <div className='p-4 text-orange-700 font-bold'>
+                        <div className=' text-orange-700 font-bold'>
                             <span className='text-2xl'>REGIONAL PLANS </span>
                         </div>
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>CARPC Regional Development Framework
+                            <span className='text-white font-semibold text-xl '>CARPC Regional Development Framework
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 CARPC has prepared an update, known as
                                 the Regional Development Framework (RDF), to the Vision 2020: Dane County Land Use and
                                 Transportation Plan. The Framework draws
@@ -1404,10 +1406,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Dane County’s North Mendota Parkway
+                            <span className='text-white font-semibold text-xl '>Dane County’s North Mendota Parkway
                                 Study (2009)
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The North Mendota Parkway Study helped
                                 develop a series of recommended study
                                 areas for a future north-metro parkway route:
@@ -1444,10 +1446,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Dane County Climate Action Plan (2020)
+                            <span className='text-white font-semibold text-xl '>Dane County Climate Action Plan (2020)
 
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 Dane County has created a sciencebased plan to achieve “deep
                                 decarbonization” that is consistent with
                                 the latest recommendations from the
@@ -1479,10 +1481,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Dane County Natural Hazard Mitigation
+                            <span className='text-white font-semibold text-xl '>Dane County Natural Hazard Mitigation
                                 Plan (2017; currently being updated)
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 The plan outlines a strategy with specifc
                                 programs and policies that can be
                                 implemented by Dane County and local
@@ -1504,16 +1506,16 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Madison Region Economic Partnership
+                            <span className='text-white font-semibold text-xl '>Madison Region Economic Partnership
                                 (MadREP) Advance Now 2.0 (2019)
                             </span>
-                            <p className='p-3 flex justify-center items-center flex-col'>
+                            <p className=' flex justify-center items-center flex-col'>
                                 The Advance Now 2.0 strategy represents
                                 a refreshed blueprint to ensure that the
                                 Madison Region continues its trajectory
                                 as a national community of choice.
                                 <img
-                                    className='p-3'
+                                    className=''
                                     src={friends_on_road}
                                 ></img>
                                 The process will also serve as MadREP’s fve-year
@@ -1529,11 +1531,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             </p>
                         </div>
 
-                        <div className='p-4 text-orange-700 font-bold'>
+                        <div className=' text-orange-700 font-bold'>
                             <span className='text-2xl'>LOCAL PLANS  </span>
                         </div>
 
-                        <div className='p-4'>
+                        <div className=''>
                             <p>Local reports, documents, and other studies
                                 relevant to transportation, land use, and
                                 economic development in the region were
@@ -1544,11 +1546,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>Madison in Motion – Sustainable
+                            <span className='text-white font-semibold text-xl '>Madison in Motion – Sustainable
                                 Madison Transportation Master Plan
                                 (2017)
                             </span>
-                            <p className='p-3'>
+                            <p className=''>
                                 Madison in Motion, the City of Madison’s
                                 Sustainable Madison Transportation
                                 Master Plan, is intended to guide future
@@ -1574,11 +1576,11 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                     </div>
 
 
-                    <div className="p-6 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
+                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="12">
 
-                        <div className='p-4'>
-                            <p className='p-2'>
+                        <div className=''>
+                            <p className=''>
                                 The intent of the RTP is to ofer a vision
                                 and blueprint for the future of the
                                 transportation network in the Madison
@@ -1596,7 +1598,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 public involvement process was broken
                                 down into three phases
                             </p>
-                            <p className='p-2'>
+                            <p className=''>
                                 <br></br>
                                 • Phase One: Introduction to the
                                 Planning Process
@@ -1621,13 +1623,13 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                                 <img
                                     src={parked_vehicles}
-                                    className='p-2'
+                                    className=''
                                 ></img>
                             </div>
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
-                            <span className='text-2xl p-4 font-bold'>
+                            <span className='text-2xl  font-bold'>
                                 CONNECT GREATER MADISON RTP
                                 WEBSITE
                             </span>
@@ -1660,7 +1662,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div className='flex flex-col justify-center items-center'>
-                            <span className='text-2xl p-4 font-bold'>
+                            <span className='text-2xl font-bold'>
                                 ONLINE SURVEY
                             </span>
 
@@ -1696,7 +1698,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
-                            <span className='text-2xl p-4 font-bold'>
+                            <span className='text-2xl  font-bold'>
                                 FOCUS GROUPS
                             </span>
 
@@ -1718,7 +1720,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                     • The trade-of between greater accessibility
                                     by personal vehicle and the high expense
                                     of car ownership.
-                                    <p className='p-4 text-blue-500 font-semibold'>
+                                    <p className=' text-blue-500 font-semibold'>
                                         “My car payment is my biggest expense.
                                         Having a car for regular use means that I
                                         have to sacrifce a lot of things in the rest
@@ -1737,7 +1739,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 <p>
                                     • The need for more frequent, accessible,
                                     and convenient public transit.
-                                    <p className='p-4 text-blue-500 font-semibold' >
+                                    <p className=' text-blue-500 font-semibold' >
 
                                         “The bus is not much available at night
                                         and during the weekends. [The Latino
@@ -1754,7 +1756,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                     • Transportation barriers make it difcult
                                     to meaningfully engage with family and
                                     community.
-                                    <p className='p-4 text-blue-500 font-semibold' >
+                                    <p className=' text-blue-500 font-semibold' >
 
                                         “It is hard to be involved with kids’ after
                                         school activities and things like parentteacher conferences due to transportation
@@ -1782,7 +1784,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                         <div className='flex flex-col justify-center items-center'>
-                            <span className='text-2xl p-4 font-bold'>
+                            <span className='text-2xl  font-bold'>
                                 INTERACTIVE ONLINE MAPS
 
                             </span>
@@ -1816,7 +1818,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
-                            <span className='text-2xl p-4 font-bold'>
+                            <span className='text-2xl  font-bold'>
                                 PUBLIC INVOLVEMENT MEETINGS
 
                             </span>
@@ -1838,10 +1840,10 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 to announce each PIM, notice was emailed
                             </p>
                             <img
-                                className='p-4'
+                                className=''
                                 src={two_roads}></img>
 
-                            <p className='p-6'>
+                            <p className=''>
                                 out to the entire MPO contact list and with a
                                 request that community organizations share
                                 the announcement with their members, and
@@ -1867,7 +1869,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                             </p>
                             <img
-                                className='p-6 w-full'
+                                className=' w-full'
                                 src={interactive_online_map}
                             >
                             </img>
