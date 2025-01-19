@@ -2,7 +2,7 @@ import React from 'react'
 
 function Report() {
     return (
-        <div className='w-screen lg:h-[80vh] h-[90vh]  sm:h-[60vh] flex justify-center items-center lg:p-1 p-2'>
+        <div className='w-screen lg:h-[80vh] h-[90vh] lg:overflow-hidden overflow-y-auto sm:h-[60vh] flex justify-center items-center lg:p-1 p-2'>
 
             <div className='border bg-gray-600 py-4 px-2  lg:h-fit lg:w-2/3 rounded-lg shadow-lg flex h-fit  flex-col items-center lg:pt-0
              '>
