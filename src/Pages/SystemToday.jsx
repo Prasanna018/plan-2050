@@ -97,7 +97,8 @@ function SystemToday() {
     useEffect(() => {
         const observerOptions = {
             root: null, // Use the viewport as the root
-            threshold: [0.1, 0.5, 0.9], // Trigger at different points of visibility
+            rootMargin: '0px 0px -50% 0px', // Adjust to consider element visibility in the viewport
+            threshold: 0.01, // Trigger when 20% of the section is visible
         };
 
         const observerCallback = (entries) => {
@@ -127,6 +128,8 @@ function SystemToday() {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
+
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -138,7 +141,7 @@ function SystemToday() {
 
             <div className="hidden md:w-[50vw] sm:w-[40vw] lg:items-center justify-start h-full  text-blue-500 lg:flex">
 
-                <div className='flex flex-col bg-white h-fit p-2 items-start space-y-6'>
+                <div className='flex flex-col  h-fit p-2 items-start space-y-6'>
 
                     {links.map((link, index) => (
                         <div
@@ -165,11 +168,13 @@ function SystemToday() {
 
 
 
-                    <div id="image-section" className="object-cover scroll-section">
+                    <div id="image-section" className="object-cover  scroll-section">
                         <img src={system_today_img} alt="Summary Background" />
                     </div>
 
-                    <div>
+
+                    <div className='space-y-4
+                    '>
                         <span className='text-2xl text-white font-bold'>
                             Our Transportation
                             System Today
@@ -186,11 +191,20 @@ function SystemToday() {
                         </p>
                     </div>
 
-                    <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="1">
+                    <div className=" text-white sm:text-xl  md:text-white scroll-section flex flex-col items-center justify-center" id="1">
 
 
-                        <div className='flex flex-col justify-center items-center'>
-                            <span className='text-orange-700 text-center text-2xl p-4'>Roadways</span>
+                        <div className='flex flex-col justify-center w-full items-center'>
+
+                            <div>
+
+                                <span className='text-white font-bold text-center text-2xl p-4'>Roadways
+
+
+                                </span>
+                            </div>
+
+
                             <p className='p-4'>
                                 Streets and highways form the
                                 foundation of the transportation
@@ -203,13 +217,7 @@ function SystemToday() {
                                 cities. As the National Association of City
                                 Transportation Ofcials (NACTO) notes, they
                                 are the lifeblood of our communities and the
-                                foundation of our urban economies. With
-                                streets making up 80% of all public space
-                                in cities, they have the potential to foster
-                                economic activity, serve as an attractive front
-                                yard space for residents, and provide a safe
-                                place for all people, including those moving
-                                on foot, by bike or via transit.
+                                foundation of our urban economies.
                                 There are over 2,900 miles of public
                                 roadways in the MPO Planning Area and
                                 380 bridges. Roads are critical to virtually
@@ -235,6 +243,7 @@ function SystemToday() {
                                 infrastructure asset, the roadway system
                                 requires maintenance to remain in
                                 acceptable condition.
+                                <br></br>
                                 The Madison area has a uniquely constrained
                                 roadway system due to the natural
                                 geography of the area, with the City of
@@ -392,13 +401,7 @@ function SystemToday() {
 
                                     The functional classifcation system only
                                     addresses how roadways are being used
-                                    by motor vehicle trafc. Street typology
-                                    goes beyond that to look at land use and
-                                    community context and considers multimodal travel. In 2021, the City of Madison
-                                    hired a consultant to assist the city in
-                                    developing a process and tools to assist in
-                                    designing new and reconstructed streets that
-                                    balance all competing street uses consistent
+                                    by motor vehicle trafc.
                                 </p>
                                 <img
                                     className='p-4'
@@ -1070,8 +1073,11 @@ function SystemToday() {
 
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="3">
                         <div >
-                            <span className='text-white text-2xl p-2 text-center font-bold'>Bicycles</span>
+                            <div className='flex justify-center items-center'>
 
+                                <span className='text-white text-2xl p-2 text-center font-bold'>Bicycles</span>
+
+                            </div>
                             <p className=''>
                                 The Madison metropolitan area is
                                 served by an interconnected bikeway network
@@ -1180,10 +1186,14 @@ function SystemToday() {
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="4">
 
                         <div className='space-y-4 '>
-                            <span className='p-2 text-2xl text-white font-bold'>
-                                EXISTING PEDESTRIAN SYSTEM
 
-                            </span>
+                            <div className='flex justify-center items-center'>
+
+                                <span className='p-2 text-2xl text-white font-bold'>
+                                    EXISTING PEDESTRIAN SYSTEM
+
+                                </span>
+                            </div>
                             <p className='
                         '>
                                 Pedestrian facilities are important
@@ -1390,12 +1400,15 @@ function SystemToday() {
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="5">
                         <div className='
                     '>
-                            <span className='text-white font-bold text-2xl'>
-                                Transportation
-                                Demand
-                                Management and
-                                Ridesharing
-                            </span>
+                            <div className='flex justify-center items-center text-center'>
+
+                                <span className='text-white font-bold text-2xl'>
+                                    Transportation
+                                    Demand
+                                    Management and
+                                    Ridesharing
+                                </span>
+                            </div>
                             <p>
                                 Transportation Demand Management (TDM)
                                 is generally defned as a set of strategies to
@@ -1655,38 +1668,7 @@ function SystemToday() {
                                 and most destinations served
                                 by inter-city buses are further
                                 from Madison than La Crosse
-                                is. Accordingly, a rough and
-                                highly conservative estimate
-                                of CO2 emissions reductions
-                                from the use of inter-city buses
-                                is that at least 10,000,000 lbs.
-                                (over 4,500 metric tons) of additional CO2 would be released annually if
-                                all those trips were made by SOV.
-                                Assuming that the 3,800 annual riders of
-                                Jeferson Lines are 1/20th, or 5% of all inter-city
-                                passengers, 76,000 one-way trips are made
-                                into or out of Madison annually on inter-city
-                                buses. Once again basing overall estimates
-                                on the conservative trip length of 142 miles,
-                                and given that approximately 6.8 gallons of
-                                fuel would be burned by the average vehicle
-                                while making that trip13, over 500,000 gallons
-                                of gasoline are saved annually through intercity bus ridership in the Madison area.
-                                The combined direct (gas, parking, & tolls)
-                                and indirect (insurance, maintenance, etc.)
-                                cost of operating a private vehicle for the
-                                142-mile trip to La Crosse is estimated at
-                                $103.19.14 These costs do not include the cost
-                                of the vehicle itself. A one-way ticket for this
-                                trip costs between $22 and $31, depending on
-                                the bus company and desired day of travel.15
-                                Assuming that all inter-city bus tickets cost just
-                                $22 (the low end of ticket prices to one of the
-                                closest possible destinations), the estimated
-                                76,000 passengers of inter-city bus service
-                                to and from Madison save over $6 million
-                                annually by not making those trips in private
-                                automobiles. The public does subsidize some
+                                is.  The public does subsidize some
                                 inter-city bus services through the federal
                                 Section 5311 Program; for 2022-2026, this
                                 annual support amounts to under $1.5 million

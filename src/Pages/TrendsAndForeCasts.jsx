@@ -60,7 +60,8 @@ function TrendsAndForeCasts() {
     useEffect(() => {
         const observerOptions = {
             root: null, // Use the viewport as the root
-            threshold: [0.1, 0.5, 0.9], // Trigger at different points of visibility
+            rootMargin: '0px 0px -50% 0px', // Adjust to consider element visibility in the viewport
+            threshold: 0.01, // Trigger when 20% of the section is visible
         };
 
         const observerCallback = (entries) => {
@@ -90,6 +91,7 @@ function TrendsAndForeCasts() {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}

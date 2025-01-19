@@ -24,7 +24,7 @@ function Appendices() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="lg:h-[80vh] h-[90vh] flex  sm:justify-center w-screen sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit sm:bg-black sm:items-center lg:justify-start lg:items-center
+            className="lg:h-[80vh] h-[90vh] flex  sm:justify-center w-screen sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit  sm:items-center bg-[#e7eaeb] lg:justify-start lg:items-center
             md:w-screen md:h-[70vh] lg:p-5
             "
         >
@@ -33,7 +33,7 @@ function Appendices() {
                     pdfLinks.map((pdf) => (
                         (
                             <a
-                                className='underline sm:text-xl text-sm text-white font-semibold italic hover:text-blue-700'
+                                className='underline sm:text-xl text-sm text-white font-semibold italic hover:text-pink-600'
                                 target='_blank'
                                 key={pdf.id}
                                 href={pdf.link}

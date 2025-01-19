@@ -49,10 +49,12 @@ function Introduction() {
             });
         }
     };
+
     useEffect(() => {
         const observerOptions = {
             root: null, // Use the viewport as the root
-            threshold: [0.1, 0.5, 0.9], // Trigger at different points of visibility
+            rootMargin: '0px 0px -50% 0px', // Adjust to consider element visibility in the viewport
+            threshold: 0.01, // Trigger when 20% of the section is visible
         };
 
         const observerCallback = (entries) => {
@@ -82,6 +84,7 @@ function Introduction() {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
+
 
     return (
         <motion.div
@@ -1013,19 +1016,6 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
 
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
@@ -1067,8 +1057,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
 
-                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 pt-2"
-                        id="11">
+                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 pt-2" id="11">
 
 
                         <div className='text-start text-orange-700 font-bold'>
@@ -1111,11 +1100,8 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 cooperation between state agencies, Dane
                                 County, and local governments in planning
                                 for and developing bicycle facilities and
-                                programs. It is intended to educate citizens
-                                and policy makers on bicycle transportation
-                                issues and the needs of bicyclists as well as
-                                present resources for planning, designing,
-                                and maintaining bicycle facilities. The plan
+                                programs.
+                                maintaining bicycle facilities. The plan
                                 is a component of the the MPO’s RTP. The
                                 facility plans have been updated as part of
                                 the RTPs.
