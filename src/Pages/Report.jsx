@@ -2,9 +2,10 @@ import React from 'react'
 
 function Report() {
     return (
-        <div className='w-screen lg:h-[80vh] h-[90vh] sm:h-[60vh] flex justify-center items-center lg:p-2 p-4'>
+        <div className='w-screen lg:h-[80vh] h-[90vh]  sm:h-[60vh] flex justify-center items-center lg:p-1 p-2'>
 
-            <div className='border bg-gray-600 p-6 lg:h-fit lg:w-2/3 rounded-lg shadow-lg flex   flex-col items-center'>
+            <div className='border bg-gray-600 py-4 px-2  lg:h-fit lg:w-2/3 rounded-lg shadow-lg flex h-fit  flex-col items-center lg:pt-0
+             '>
                 <span className='text-center lg:p-2 text-white font-bold sm:text-xl lg:text-2xl'>Federal law requires Metropolitan Transportation Plans (MTPs) for urban areas over 50,000 in population as a condition for spending federal highway and transit funding.  MTPs must:	</span>
                 <br></br>
 
