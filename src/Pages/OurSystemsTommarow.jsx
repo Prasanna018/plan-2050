@@ -75,14 +75,14 @@ function OurSystemsTommarow() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit bg-[#e7eaeb]"
+            className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit bg-[#e7eaeb] "
         >
 
 
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center lg:text-xl lg:justify-center lg:items-start lg:pl-2">
-                <div className='flex flex-col space-y-4 p-2'>
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center  lg:justify-center lg:items-start lg:pl-2">
+                <div className='flex flex-col space-y-4 p-2 text-sm'>
 
 
                     {links.map((link, index) => (
@@ -103,15 +103,15 @@ function OurSystemsTommarow() {
 
             {/* right */}
             <div className="w-full relative  sm:w-full sm:h-fit lg:flex lg:justify-center pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full  ">
-                <div className='lg:w-[35vw] p-2 bg-black h-fit '>
+                <div className='lg:w-[35vw] p-2 bg-black h-fit text-lg '>
 
 
 
                     <div id="image-section" className="object-cover scroll-section">
                         <img src={our_system_tomorrow_bg} alt="Summary Background" />
                     </div>
-                    <div className=''>
-                        <p className='p-4 text-lg'>As the greater Madison region’s
+                    <div className='py-2'>
+                        <p className=' text-lg'>As the greater Madison region’s
                             transportation system evolves, three critical
                             issues that should play an important role in
                             planning and decision-making are equity,
@@ -153,9 +153,12 @@ function OurSystemsTommarow() {
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="1">
                         <div
                         >
-                            <span className='p-2 text-orange-600 text-xl'>
-                                Critical Issues
-                            </span>
+                            <div className='flex text-center justify-center'>
+
+                                <span className='p-2 text-white font-bold text-center text-xl'>
+                                    Critical Issues
+                                </span>
+                            </div>
                             <p>
                                 As the greater Madison region’s
                                 transportation system evolves, three critical
@@ -321,9 +324,14 @@ function OurSystemsTommarow() {
 
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="2">
 
+                        <div className='flex text-center justify-center'>
 
+                            <span className=' text-white font-bold text-center text-xl'>
+                                Diverse Change
+                            </span>
+                        </div>
 
-                        <div className='p-2'>
+                        <div className='py-2'>
                             <span className='p-4'>
                                 Transportation is currently experiencing
                                 a rapid change not seen since the early
@@ -352,7 +360,7 @@ function OurSystemsTommarow() {
                             </span>
                         </div>
 
-                        <div className='p-2'>
+                        <div className='py-2'>
                             <span className='text-orange-600 text-xl '>
                                 TELEWORK
 
@@ -418,14 +426,14 @@ function OurSystemsTommarow() {
                                 management practices.
                             </p>
                         </div>
-                        <div className='p-4 w-full'>
+                        <div className='py-4 w-full'>
                             <img
                                 src={Figure_4_a_Levels_of_Vehicle_Automation}
                                 className='w-full object-cover p-2'
                             ></img>
                         </div>
 
-                        <div className='p-2'>
+                        <div className='py-2'>
                             <span className='text-orange-800 text-xl'>CONNECTED AND AUTONOMOUS
                                 VEHICLES </span>
 
@@ -504,7 +512,12 @@ function OurSystemsTommarow() {
 
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="3">
 
+                        <div className='flex text-center justify-center'>
 
+                            <span className='p-2 text-white font-bold text-center text-xl'>
+                                Needs and Recommendations
+                            </span>
+                        </div>
                         <div>
                             <p>
                                 The MPO has synthesized transportation
@@ -640,7 +653,12 @@ function OurSystemsTommarow() {
                     </div>
 
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center " id="4">
+                        <div className='flex text-center justify-center'>
 
+                            <span className='py-2 text-white font-bold text-center text-xl'>
+                                Evaluating Plan Progress
+                            </span>
+                        </div>
                         <div className=' text-center'>
                             <p className=''>
                                 The Infrastructure Investment and Jobs

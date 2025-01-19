@@ -79,7 +79,7 @@ function Funding() {
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center  lg:text-xl lg:justify-center lg:items-start lg:pl-2 ">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center   lg:justify-center lg:items-start lg:pl-2 ">
                 {links.map((link, index) => (
                     <div
 
@@ -112,8 +112,8 @@ function Funding() {
                         <img src={funding_bg} alt="Summary Background" />
                     </div>
 
-                    <div className='py-3'>
-                        <span className='text-white text-2xl underline'>Funding the Plan:
+                    <div className='py-3 flex justify-center items-center text-center w-full'>
+                        <span className='text-white pt-2 text-center text-2xl '>Funding the Plan:
                             Financial Capacity
                             Analysis </span>
                     </div>
@@ -280,11 +280,15 @@ function Funding() {
 
 
                     <div>
-                        <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center w-full" id="2">
-                            <span className='text-orange-700 text-xl p-4'>
+                        <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center  w-full" id="2">
+
+
+                            <span className='text-orange-700 text-xl p-4 '>
                                 COUNTY AND MUNICIPAL STREETS/
                                 ROADWAYS
                             </span>
+
+
                             <p className='p-2'>
                                 Municipal streets are mostly fnanced by
                                 local funding sources. These include general
@@ -326,12 +330,15 @@ function Funding() {
                                 and maintenance
                             </p>
                         </div>
-                        <div>
-                            <span className='text-orange-700 text-xl p-4'>
-                                FEDERAL AND STATE FUNDING FOR
-                                STREETS/ROADWAYS
-                            </span>
-                            <p className='p-2'>
+                        <div className='w-full flex justify-center flex-col items-center'>
+                            <div className='flex justify-center text-center items-center'>
+
+                                <span className='text-orange-700 text-xl '>
+                                    FEDERAL AND STATE FUNDING FOR
+                                    STREETS/ROADWAYS
+                                </span>
+                            </div>
+                            <p className='text-lg'>
                                 Federal and state funding accounts for
                                 25.5% and 64.7% of revenues, respectively,
                                 in the WisDOT 2021-‘23 biennial budget with
@@ -384,10 +391,7 @@ function Funding() {
                                 2020 Census urban area population data is
                                 factored into the funding allocations. That has
                                 not been factored into the revenue estimate.
-                                The higher STBG – Urban program funding
-                                level in FFY 2022 under the IIJA is assumed
-                                to continue into the future with infationary
-                                adjustments as with other programs.
+
                                 State transportation funding is derived
                                 primarily from the state motor fuel tax, driver
                                 license fees, and vehicle registration fees.
@@ -398,10 +402,10 @@ function Funding() {
                             </p>
                             <img
                                 src={Figure_5_a_Historical_County_and_Municipal_Street_Roadway}
-                                className='object-cover w-full p-4'
+                                className='object-cover w-full '
                             >
                             </img>
-                            <p className=''>
+                            <p className='text-lg py-2'>
                                 • State Highway Rehabilitation (SHR)
                                 program, which funds maintenance work
                                 on existing state highways along with
@@ -450,8 +454,8 @@ function Funding() {
 
 
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center w-full" id="3">
-                        <div className='p-4'>
-                            <p className='p-2'>Figure 5-f shows the projected total
+                        <div className=''>
+                            <p className=''>Figure 5-f shows the projected total
                                 transportation revenues for state highway,
                                 local roadway, transit, and bicycle/pedestrian
                                 facility projects for the next 28-year period
@@ -466,10 +470,10 @@ function Funding() {
                         </div>
                         <img
                             src={Figure_5_f_Estimated_Transportation_Revenue_2022_2050}
-                            className='p-6 w-full object-cover'
+                            className=' w-full object-cover'
                         >
                         </img>
-                        <p className='p-4'>
+                        <p className=''>
                             $13 billion will available to fnance projects over the 28-year planning
                             period. This includes $6.4 billion for roadway construction, $3.3 billion for
                             roadway operations and maintenance, $2.9 billion for transit, and $343
@@ -519,7 +523,7 @@ function Funding() {
 
                     <div className="py-3 text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center w-full" id="4">
                         <div>
-                            <p className='p-4'>Figure 5-g shows projected transportation
+                            <p className=''>Figure 5-g shows projected transportation
                                 expenses. Expenses are estimated at $12.5
                                 billion for the planning period. Separate
                                 methodologies, detailed below, were
@@ -534,11 +538,11 @@ function Funding() {
                         <div className='w-full p-4'>
                             <img
                                 src={Figure_5_g_Estimated_Transportation_Expenses_2022_2050}
-                                className='p-4 w-full object-cover'
+                                className=' w-full object-cover'
                             ></img>
                         </div>
-                        <div className='w-full p-4'>
-                            <p className='p-2'>Figure 5-h shows the pavement condition of
+                        <div className='w-full '>
+                            <p className=''>Figure 5-h shows the pavement condition of
                                 state highways by type and local roadways
                                 by functional classifcation in 2015 and 2019.
                                 Next, average per lane mile roadway
@@ -572,10 +576,10 @@ function Funding() {
 
                             <img
                                 src={Figure_5_h_Pavement_Condition_by_Roadway_Type_in_the_Madison_Metropolitan_Planning_Area}
-                                className='p-4 object-cover w-full'
+                                className=' object-cover w-full'
                             >
                             </img>
-                            <p className='p-4'>construction over the 28-year planning period
+                            <p className=''>construction over the 28-year planning period
                                 to 2050, while $2.9 billion will be needed
                                 for maintenance and operations. As noted,
                                 local roadway revenue will need to increase
@@ -723,7 +727,7 @@ function Funding() {
 
 
 
-        </motion.div>
+        </motion.div >
     )
 }
 

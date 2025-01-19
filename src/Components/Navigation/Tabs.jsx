@@ -14,7 +14,7 @@ function Tabs() {
                     onClick={() => setSelected(tab.tabName)}
                     className={`text-white py-2 px-2 mx-2 
                         rounded-t-lg cursor-pointer
-                        hover:bg-[#33a8cb] hover:text-white
+                        hover:bg-[#33a8cb] hover:text-white hover:duration-200
                         ${selected === tab.tabName ? "bg-[#33a8cb]" : "bg-[#61788a]"}`}
                 >
                     {tab.tabName}
