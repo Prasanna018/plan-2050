@@ -12,10 +12,10 @@ function Tabs() {
                     key={tab.id}
                     to={tab.to || '#'} // Fallback if `to` is undefined
                     onClick={() => setSelected(tab.tabName)}
-                    className={`text-black py-2 px-2 mx-2 
+                    className={`text-white py-2 px-2 mx-2 
                         rounded-t-lg cursor-pointer
-                        hover:bg-[#9a2237] hover:text-white
-                        ${selected === tab.tabName ? "bg-[#982b3f]" : "bg-[#da7879]"}`}
+                        hover:bg-[#33a8cb] hover:text-white
+                        ${selected === tab.tabName ? "bg-[#33a8cb]" : "bg-[#61788a]"}`}
                 >
                     {tab.tabName}
                 </Link>

@@ -43,7 +43,7 @@ function NavBar() {
 
     return (
 
-        < div className='fixed top-0 left-0 w-full space-y-3 z-50  '>
+        < div className='fixed top-0 left-0 w-full space-y-3 z-50 bg-[#283339] pb-1 '>
             <div className=' flex w-full items-center space-x-1 justify-center sm:flex  sm:justify-between sm:items-center sm:p-4 '>
                 {/* left side of navigation */}
 
@@ -104,7 +104,7 @@ function NavBar() {
                     }
 
                     <div className='flex flex-col items-center justify-center'>
-                        <Link className='text-yellow-500 font-bold sm:text-2xl text-[16px] text-center flex italic'
+                        <Link className='text-white font-bold sm:text-2xl text-[16px] text-center flex italic'
                             to='/'
                         >
                             PLAN 2050
@@ -123,17 +123,17 @@ function NavBar() {
                 {/* right side of navigation */}
                 <div className='hidden sm:hidden md:flex  space-x-2'>
 
-                    <div className='text-center'>
+                    <div className='text-center '>
                         <a
                             href='https://www.greatermadisonmpo.org/planning/documents/RTP_2050_Full_Report_with_Appendix_Final73117.pdf'
                             target='_blank'
 
-                            className='text-[#982b3f] font-bold underline'>Regional Transportation Plan 2050 Full Report with Full Appendix </a>
+                            className='text-white font-bold underline'>Regional Transportation Plan 2050 Full Report with Full Appendix </a>
                     </div>
                     <div className='sm:flex justify-center items-center space-x-2'>
-                        <a className='text-[#982b3f]  cursor-pointer'><ImFacebook2 size={22}></ImFacebook2></a>
-                        <a className='text-[#982b3f] cursor-pointer'><FaTwitter size={26}></FaTwitter></a>
-                        <a className='text-[#982b3f] cursor-pointer'><CiLink size={34}></CiLink></a>
+                        <a className='text-white  cursor-pointer '><ImFacebook2 size={22}></ImFacebook2></a>
+                        <a className='text-white cursor-pointer'><FaTwitter size={26}></FaTwitter></a>
+
                     </div>
 
                     {/* <div>

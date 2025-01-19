@@ -13,11 +13,11 @@ import Funding from './Pages/Funding'
 
 function App() {
   return (
-    <div className='min-h-screen  bg-black text-white'>
+    <div className='min-h-screen  bg-[#e7eaeb] text-white'>
 
       <NavBar></NavBar>
 
-      <main className=' absolute sm:top-52 top-10 md:top-[170px] lg:top-[136px]
+      <main className=' absolute sm:top-52 top-10 md:top-[170px] bg-[#e7eaeb] lg:top-[136px]
       '>
 
         <Routes>
