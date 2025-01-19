@@ -2,8 +2,8 @@ import React from 'react';
 
 function Report() {
     return (
-        <div className='w-full min-h-screen flex justify-center items-center px-4 sm:px-6 lg:px-8'>
-            <div className='border bg-gray-600 py-4 px-4 lg:px-8 lg:w-2/3 w-full rounded-lg shadow-lg flex flex-col items-center'>
+        <div className='w-full mt-6 flex lg:h-[80vh] h-[90vh] justify-center items-center px-4 sm:px-6 lg:px-8'>
+            <div className='border bg-gray-600 py-4 px-4 lg:px-8 lg:w-2/3 w-full rounded-lg shadow-lg flex flex-col items-center overflow-y-auto max-h-[90vh] no-scrollbar'>
                 <span className='text-center text-white font-bold sm:text-xl lg:text-2xl text-base px-2'>
                     Federal law requires Metropolitan Transportation Plans (MTPs) for urban areas over 50,000 in population as a condition for spending federal highway and transit funding. MTPs must:
                 </span>
@@ -41,6 +41,8 @@ function Report() {
                         </a>
                     </p>
                 </div>
+
+                <div className='mb-4'></div> {/* Added margin to ensure bottom space */}
             </div>
         </div>
     );
