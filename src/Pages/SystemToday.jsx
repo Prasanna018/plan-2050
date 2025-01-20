@@ -1550,7 +1550,7 @@ function SystemToday() {
 
 
                         <div>
-                            <span className=' text-white text-2xl '>Inter-Regional Travel </span>
+                            <span className=' text-white font-bold text-2xl '>Inter-Regional Travel </span>
 
 
                         </div>
@@ -1737,14 +1737,14 @@ function SystemToday() {
 
                     <div className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center" id="7">
                         <div>
-                            <span className=' text-white text-2xl' >
+                            <span className=' text-white font-bold text-2xl' >
                                 Freight Transportation
                             </span>
 
                         </div>
 
                         <div className=''>
-                            <span className=' text-orange-700 text-xl'>
+                            <span className=' text-orange-700 font-bold text-xl'>
                                 FREIGHT MOVEMENT
 
                             </span>

@@ -308,7 +308,7 @@ z                    ">
 
                             {/* Add overflow-x-auto to make this scrollable horizontally */}
                             <div className="grid grid-cols-2 gap-6 w-full pt-2">
-                                <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
+                                <div className="flex flex-col justify-between items-center  py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 1: Introduction</span>
                                     <hr className="border-2 w-full"></hr>
                                     <p className=''>Provides background, plan goals, planning requirements</p>
@@ -323,7 +323,7 @@ z                    ">
                                         economic and travel trends </p>
                                 </div>
 
-                                <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
+                                <div className="flex flex-col justify-between items-center py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 3: Our
                                         Transportation System Today </span>
                                     <hr className="border-2 w-full"></hr>
@@ -360,7 +360,7 @@ z                    ">
                         id="4"
                         className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center pt-4"
                     >
-                        <div className='text-center'>
+                        <div className=''>
                             <p>
                                 In 2015 the MPO teamed up with the Capital Area Regional Planning Commission (CARPC) to conduct the Greater Madison Region Values
                                 and Priorities Survey to determine the values and priorities of area residents to ensure that planning decisions speak to and correspond with
@@ -372,7 +372,7 @@ z                    ">
                             </p>
                         </div>
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6    flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 1: LIVABLE COMMUNITIES
 
@@ -386,7 +386,7 @@ z                    ">
                                 and public transit. </p>
                         </div>
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6   flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 2: SAFETY
 
@@ -402,11 +402,11 @@ z                    ">
                         </div>
 
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6    flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 3: PROSPERITY
                             </span>
-                            <p className=' py-4 p-4'>Build and maintain a
+                            <p className=' py-4'>Build and maintain a
                                 transportation system that provides
                                 people with afordable access to
                                 jobs, enables the efcient movement of goods
@@ -417,7 +417,7 @@ z                    ">
                         </div>
 
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6   flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 4: EQUITY
                             </span>
@@ -437,7 +437,7 @@ z                    ">
                         </div>
 
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6    flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 5: ENVIRONMENTAL
                                 SUSTAINABILITY
@@ -454,7 +454,7 @@ z                    ">
                         </div>
 
 
-                        <div className='pt-6  text-center  flex flex-col justify-center items-center'>
+                        <div className='pt-6    flex flex-col justify-center items-center'>
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 6: SYSTEM PERFORMANCE
 
