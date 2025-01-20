@@ -659,7 +659,9 @@ function OurSystemsTommarow() {
                                 Evaluating Plan Progress
                             </span>
                         </div>
+
                         <div className=''>
+
                             <p className=''>
                                 The Infrastructure Investment and Jobs
                                 Act (IIJA) requires MPOs to develop
@@ -696,6 +698,7 @@ function OurSystemsTommarow() {
                                 performance measures in 2022 in an
                                 interactive online format.
                             </p>
+
                         </div>
 
                         <div className='flex flex-col items-center'>
