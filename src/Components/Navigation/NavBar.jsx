@@ -107,7 +107,7 @@ function NavBar() {
                         <Link className='text-white font-bold sm:text-2xl text-[16px] text-center flex italic'
                             to='/'
                         >
-                            PLAN 2050
+                            Tri-Cities Area MPO Metropolitan Transportation Plan 2050
 
 
                         </Link>

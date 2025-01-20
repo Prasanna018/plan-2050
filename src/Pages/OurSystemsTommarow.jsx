@@ -81,24 +81,26 @@ function OurSystemsTommarow() {
 
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center  lg:justify-center lg:items-start lg:pl-2">
-                <div className='flex flex-col space-y-4 p-2 text-sm'>
+            <div className="hidden md:w-[50vw] sm:w-[40vw] lg:items-center justify-start h-full  text-blue-500 lg:flex">
 
+                <div className='flex flex-col  h-fit p-2 items-start space-y-6'>
 
                     {links.map((link, index) => (
                         <div
-                            className='flex'
 
                             key={index}>
                             <a
-                                className={`cursor-pointer scroll-smooth p-2 bg-[#008CBA] text-white rounded-xl ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
+                                className={`cursor-pointer scroll-smooth text-white rounded-xl bg-[#008CBA] p-2 ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}
                                 onClick={() => handleSmoothScroll(link.id)}
                             >
                                 {link.text}
                             </a>
                         </div>
                     ))}
+
+
                 </div>
+
             </div>
 
             {/* right */}
