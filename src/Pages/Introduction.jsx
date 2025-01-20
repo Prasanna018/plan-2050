@@ -291,7 +291,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
                             </span>
                         </div>
-                        <div>  <img
+                        <div className='w-full'>  <img
                             className='object-cover '
                             src={green_city_road}></img></div>
 
@@ -303,18 +303,18 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         <div className="flex justify-center items-center flex-col w-full
                     space-y-4
 
-                    ">
+z                    ">
                             <div>How to Navigate the Plan</div>
 
                             {/* Add overflow-x-auto to make this scrollable horizontally */}
-                            <div className="grid grid-cols-2 gap-6 w-full p-2">
+                            <div className="grid grid-cols-2 gap-6 w-full pt-2">
                                 <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 1: Introduction</span>
                                     <hr className="border-2 w-full"></hr>
                                     <p className=''>Provides background, plan goals, planning requirements</p>
                                 </div>
 
-                                <div className="flex flex-col justify-between items-center text-center py-4 px-6 lg:h-[250px] w-full border space-y-4">
+                                <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 2: Trends and
                                         Forecasts</span>
                                     <hr className="border-2 w-full"></hr>
@@ -323,7 +323,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                         economic and travel trends </p>
                                 </div>
 
-                                <div className="flex flex-col justify-between items-center text-center py-4 px-6 lg:h-[250px] w-full border space-y-4">
+                                <div className="flex flex-col justify-between items-center text-center py-4  lg:h-[250px] w-full border space-y-4">
                                     <span className="lg:text-xl">Chapter 3: Our
                                         Transportation System Today </span>
                                     <hr className="border-2 w-full"></hr>
@@ -377,7 +377,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                                 GOAL 1: LIVABLE COMMUNITIES
 
                             </span>
-                            <p className='lg:px-8 py-4 '>Create connected livable places
+                            <p className=' py-4 '>Create connected livable places
                                 linked to jobs, services, education,
                                 retail, and recreation through a
                                 multimodal transportation system that
@@ -406,7 +406,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                             <span className='text-xl text-yellow-600 '>
                                 GOAL 3: PROSPERITY
                             </span>
-                            <p className='lg:px-8 py-4 p-4'>Build and maintain a
+                            <p className=' py-4 p-4'>Build and maintain a
                                 transportation system that provides
                                 people with afordable access to
                                 jobs, enables the efcient movement of goods
@@ -557,7 +557,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         className=" text-white sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center"
                         id="6">
                         <div>
-                            <span className='text-xl underline font-bold p-4'>MPO POLICY BOARD</span>
+                            <span className='text-xl underline font-bold py-2'>MPO POLICY BOARD</span>
                             <p className=''>The MPO is governed by a 14-member Policy Board appointed by the local units
                                 of government within the Metropolitan Planning Area, Dane County, and Wisconsin
                                 Department of Transportation (Figure 1-1). The Policy Board is the decision-making body for
@@ -594,8 +594,8 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-xl underline font-bold p-4'>TECHNICAL COORDINATING COMMITTEE </span>
-                            <p className='p-2'>The Technical Coordinating Committee (TCC) is a multi-model planning advisory and
+                            <span className='text-xl underline font-bold py-2'>TECHNICAL COORDINATING COMMITTEE </span>
+                            <p className='py-2'>The Technical Coordinating Committee (TCC) is a multi-model planning advisory and
                                 coordinating committee. It includes members representing various agencies or facets of
                                 transportation planning and consists of 14 voting members, 6 alternate voting members,
                                 and 2 non-voting members representing the U.S. Department of Transportation. While
@@ -744,7 +744,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         id="9">
 
                         <div>
-                            <p className=' text-center'>
+                            <p className=' '>
                                 The Connect Greater Madison 2050 Regional
                                 Transportation Plan was developed over
                                 a two-year time period beginning in late
@@ -1011,7 +1011,9 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
                             </p>
-                            <img src={peoples_on_road}>
+                            <img
+                                className='w-full object-cover'
+                                src={peoples_on_road}>
                             </img>
                         </div>
 
@@ -1022,7 +1024,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         id="10">
 
                         <div className='flex flex-col '>
-                            <span className='text-2xl font-bold p-4 text-center'>
+                            <span className='text-2xl font-bold py-2 text-center'>
                                 Federal Performance
                                 Measures
 
@@ -1057,7 +1059,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
 
 
 
-                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 pt-2" id="11">
+                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 " id="11">
 
 
                         <div className='text-start text-orange-700 font-bold'>
@@ -1065,7 +1067,7 @@ transportation-planning/financial-planning-fiscal-constraint'>regulations-and-gu
                         </div>
 
                         <div>
-                            <span className='text-white font-semibold text-xl p-4'>2050 Regional Transportation Plan (2017)</span>
+                            <span className='text-white font-semibold text-xl py-2'>2050 Regional Transportation Plan (2017)</span>
                             <p className=''>
                                 The MPO’s previous RTP. The 2050 Regional
                                 Transportation Plan was a major update to
