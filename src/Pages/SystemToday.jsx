@@ -173,7 +173,7 @@ function SystemToday() {
                     </div>
 
 
-                    <div className='space-y-4
+                    <div className='space-y-4 flex justify-center flex-col items-center
                     '>
                         <span className='text-2xl text-white font-bold'>
                             Our Transportation
