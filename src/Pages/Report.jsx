@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Report() {
     return (
         <div className='w-full mt-6 flex lg:h-[80vh] h-[90vh] justify-center items-center px-4 sm:px-6 lg:px-8'>
@@ -7,6 +8,7 @@ function Report() {
                 <span className='text-center text-white font-bold sm:text-xl lg:text-2xl text-base px-2'>
                     Federal law requires Metropolitan Transportation Plans (MTPs) for urban areas over 50,000 in population as a condition for spending federal highway and transit funding. MTPs must:
                 </span>
+
 
                 <p className='mt-4 md:p-4 p-2 text-sm sm:text-base'>
                     1. Forecast for demand for transportation facilities and services for 20 or more years

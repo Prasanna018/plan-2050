@@ -79,14 +79,12 @@ function Funding() {
         >
 
             {/* left */}
-            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-6 text-center   lg:justify-center lg:items-start lg:pl-2">
+            <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-10 text-center   lg:justify-center lg:items-start lg:pl-2 lg:pt-2
+            ">
+
                 {links.map((link, index) => (
                     <div
-
                         className='flex'
-
-
-
                         key={index}>
                         <a
                             className={`cursor-pointer scroll-smooth rounded-xl p-2 bg-[#008CBA] text-white ${activeSection === link.id ? 'text-blue-900 font-bold' : ''}`}

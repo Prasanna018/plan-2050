@@ -100,7 +100,7 @@ function Summary() {
             {/* Left Section */}
             <div className="hidden md:w-[50vw] lg:w-[50vw] lg:flex lg:flex-col space-y-8 lg:justify-center p-2
             ">
-                <div className=' flex flex-col space-y-6 h-fit px-2 py-6 rounded-lg'>
+                <div className=' flex flex-col space-y-10 h-fit px-2 py-6 rounded-lg'>
 
 
                     {links.map((link, index) => (

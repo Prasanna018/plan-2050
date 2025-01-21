@@ -103,7 +103,7 @@ function TrendsAndForeCasts() {
             {/* left */}
             <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-4 text-center  lg:text-md lg:w-[50vw] lg:pl-2 lg:items-start ">
 
-                <div className=" flex flex-col space-y-4 p-2 rounded-lg">
+                <div className=" flex flex-col space-y-10 p-2 rounded-lg">
 
                     {links.map((link, index) => (
                         <div

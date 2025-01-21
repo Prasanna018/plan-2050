@@ -138,10 +138,9 @@ function SystemToday() {
             className="lg:h-[80vh] h-[90vh] flex w-full sm:w-[100vw] space-x-2 p-1 scroll-smooth overflow-y-auto sm:h-fit bg-[#e7eaeb] "
         >
             {/* left */}
-
             <div className="hidden md:w-[50vw] sm:w-[40vw] lg:items-center justify-start h-full  text-blue-500 lg:flex">
 
-                <div className='flex flex-col  h-fit p-2 items-start space-y-6'>
+                <div className='flex flex-col  h-fit p-2 items-start space-y-10'>
 
                     {links.map((link, index) => (
                         <div

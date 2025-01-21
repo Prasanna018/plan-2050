@@ -97,7 +97,7 @@ function Introduction() {
 
             {/* left side */}
             <div className="hidden md:w-[50vw] sm:w-[40vw] sm:items-center sm:justify-center sm:flex-col lg:flex  text-blue-500 lg:space-y-4 text-center  lg:text-md lg:items-start lg:pl-2">
-                <div className=' flex flex-col justify-start items-start space-y-4 p-2 rounded-lg'>
+                <div className=' flex flex-col justify-start items-start space-y-5 p-2 rounded-lg'>
 
 
 
@@ -354,6 +354,7 @@ z                    ">
 
 
                         </div>
+
                     </div>
 
                     <div
@@ -640,8 +641,8 @@ z                    ">
                                 ensure regional cooperation in transportation
                                 planning.</p>
 
-                            <div>
-                                <span className='text-orange-600 '>REGIONAL TRANSPORTATION PLAN
+                            <div className='flex flex-col justify-center items-center py-4'>
+                                <span className='text-orange-600 py-4'>REGIONAL TRANSPORTATION PLAN
                                     REQUIREMENTS </span>
 
                                 <p>The MPO is required to develop a regional
@@ -1059,7 +1060,7 @@ z                    ">
 
 
 
-                    <div className=" text-white  sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 " id="11">
+                    <div className=" text-white py-4 sm:text-xl text-sm md:text-white scroll-section flex flex-col items-center space-y-2 " id="11">
 
 
                         <div className='text-start text-orange-700 font-bold'>
@@ -1835,7 +1836,7 @@ z                    ">
 
                             </p>
                             <img
-                                className=' w-full'
+                                className=' w-full py-4'
                                 src={interactive_online_map}
                             >
                             </img>
