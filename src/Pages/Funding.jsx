@@ -101,7 +101,7 @@ function Funding() {
 
 
 
-            <div className="w-full relative sm:w-full sm:h-fit pt-32 sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
+            <div className="w-full relative sm:w-full lg:pt-1  sm:h-fit  sm:pt-0 overflow-y-auto no-scrollbar md:w-full lg:h-full lg:flex lg:justify-center">
 
                 <div className='lg:w-[35vw] h-fit bg-black p-2 '>
 
