@@ -28,8 +28,8 @@ function App() {
       '>
 
         <Routes>
-          <Route path='/report' element={<Report></Report>}></Route>
-          <Route path='/' element={<Summary></Summary>}></Route>
+          <Route path='/' element={<Report></Report>}></Route>
+          <Route path='/summary' element={<Summary></Summary>}></Route>
           <Route path='/introduction' element={<Introduction></Introduction>}></Route>
           <Route path='appendices' element={<Appendices></Appendices>}></Route>
           <Route path='trends-and-forecasts' element={<TrendsAndForeCasts></TrendsAndForeCasts>}></Route>

@@ -38,7 +38,7 @@ function NavBar() {
         setOpen(!isOpen)
     }
 
-    const [selected, setSelected] = useState("Summary")
+    const [selected, setSelected] = useState("Report")
 
 
     return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { tabs } from '../../Constants/Tabs';
 
 function Tabs() {
-    const [selected, setSelected] = useState('Summary'); // Matches tabName in the array
+    const [selected, setSelected] = useState('Report'); // Matches tabName in the array
 
     return (
         <div className="lg:flex flex-wrap gap-y-2 sm:hidden md:hidden">
