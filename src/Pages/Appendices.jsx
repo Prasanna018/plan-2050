@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 
 const pdfLinks = [
-    { id: 1, name: "Appendix A: Project and Policy recommendations", link: "https://www.greatermadisonmpo.org/planning/documents/Appendix-A-ConnectRTP-web.pdf" },
-    { id: 2, name: "Appendix B: System Performance Report", link: "https://www.greatermadisonmpo.org/planning/documents/appendixb_systemperformancereport.pdf" },
-    { id: 3, name: "Appendix C: Environmental Justice Analysis", link: "https://www.greatermadisonmpo.org/planning/documents/Appendix-C-RTP-EJ.pdf" },
-    { id: 4, name: "Appendix D: Environmental Assessment", link: "https://www.greatermadisonmpo.org/planning/documents/Appendix-D-RTP-EnvironmentalAssessment.pdf" },
-    { id: 5, name: "Appendix E: Public Participation and Response to Comments", link: "https://www.greatermadisonmpo.org/planning/documents/AppendixE_PIRevised.pdf" },
-    { id: 6, name: "Appendix F: Congestion Management Process", link: "https://www.greatermadisonmpo.org/planning/documents/Appendix-F-RTP-CMP.pdf" },
-    { id: 7, name: "Appendix G: Pedestrian Facilities Toolbox", link: "https://www.greatermadisonmpo.org/planning/documents/Appendix-F-RTP-CMP.pdf" }
+    { id: 1, name: "Appendix A: Project and Policy recommendations", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 2, name: "Appendix B: System Performance Report", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 3, name: "Appendix C: Environmental Justice Analysis", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 4, name: "Appendix D: Environmental Assessment", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 5, name: "Appendix E: Public Participation and Response to Comments", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 6, name: "Appendix F: Congestion Management Process", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" },
+    { id: 7, name: "Appendix G: Pedestrian Facilities Toolbox", link: "https://craterpdc.org/DocumentLibrary/Transportation/Plan2045Documents/06272022_PLAN2045_ApprovedDocument.pdf" }
 ];
 
 function Appendices() {

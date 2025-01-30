@@ -28,22 +28,7 @@ function Report() {
                     Be updated every five years. The latest MTP (PLAN2045) was adopted in June 2022, replacing the previous MTPs.
                 </span>
 
-                <div className='mt-4 text-sm'>
-                    <p>
-                        PLAN2045 was developed in coordination with the
-                        <a
-                            href='https://www.capitalarearpc.org/community-regional-development/regional-development-plan-update/'
-                            target='_blank'
-                            className='text-blue-300 underline font-semibold'
-                        >
-                            Capital Area Regional Planning Commission’s 2050 Regional Development Framework
-                        </a>
-                        , which serves as the region’s advisory land use guide. The Framework draws on public priorities, local government input, and growth projections to establish goals, objectives, and strategies for accommodating future growth in the Dane County region. The adopted plan can be downloaded,
-                        <a href='../../public/report_pdf.pdf' target='_blank' className='font-semibold underline'>
-                            here
-                        </a>
-                    </p>
-                </div>
+
 
                 <div className='mb-4'></div> {/* Added margin to ensure bottom space */}
             </div>
